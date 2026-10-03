@@ -1,0 +1,4638 @@
+[
+  {
+    "symbol": "ORICONENT-EQ",
+    "price": 49.98,
+    "volume": 47960,
+    "ema9": 51.82178817570659,
+    "rvol": 0.5066149910925126,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 51.38617273685973,
+      "kalman_velocity": -0.1480330839893734,
+      "trend_strength": -1.597002757237278,
+      "confidence": 1.597002757237278,
+      "trend_changed": true
+    },
+    "timestamp": "2026-10-03T12:10:45.466Z"
+  },
+  {
+    "symbol": "SATIN-EQ",
+    "price": 227.47,
+    "volume": 233798,
+    "ema9": 229.17629586721867,
+    "rvol": 1.03124823565944,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 232.23892612725663,
+      "kalman_velocity": 1.0545229393637767,
+      "trend_strength": 11.376349099467538,
+      "confidence": 11.376349099467538,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:10:46.149Z"
+  },
+  {
+    "symbol": "MARKSANS-EQ",
+    "price": 325.6,
+    "volume": 2445782,
+    "ema9": 331.08125893453985,
+    "rvol": 1.0154444137140641,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 2,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 332.52470062730237,
+      "kalman_velocity": 0.09696680810137204,
+      "trend_strength": 1.046092236445642,
+      "confidence": 1.046092236445642,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:10:46.842Z"
+  },
+  {
+    "symbol": "HDFCNEXT50-EQ",
+    "price": 70.5,
+    "volume": 229503,
+    "ema9": 72.204572089761,
+    "rvol": 1.912612661413648,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 71.59664937435718,
+      "kalman_velocity": -0.2030363466769556,
+      "trend_strength": -2.1903860726549365,
+      "confidence": 2.1903860726549365,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:10:47.544Z"
+  },
+  {
+    "symbol": "ZENSARTECH-EQ",
+    "price": 434.35,
+    "volume": 1843893,
+    "ema9": 432.2353251527652,
+    "rvol": 0.5131255332613135,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 425.71173461809406,
+      "kalman_velocity": -1.1925993386558624,
+      "trend_strength": -12.86593767275353,
+      "confidence": 12.86593767275353,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:10:48.269Z"
+  },
+  {
+    "symbol": "GRMOVER-EQ",
+    "price": 77.87,
+    "volume": 1052630,
+    "ema9": 79.9619261034466,
+    "rvol": 0.9646432935352185,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 14,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 78.23819933638161,
+      "kalman_velocity": -0.459147078652735,
+      "trend_strength": -4.953346446788181,
+      "confidence": 4.953346446788181,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:10:48.992Z"
+  },
+  {
+    "symbol": "GARFIBRES-EQ",
+    "price": 768.4,
+    "volume": 27452,
+    "ema9": 776.8381181268165,
+    "rvol": 0.6540667718974298,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 9,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 769.1817733501986,
+      "kalman_velocity": -2.8694580935388356,
+      "trend_strength": -30.95613739620058,
+      "confidence": 30.95613739620058,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:10:49.683Z"
+  },
+  {
+    "symbol": "MARUTI-EQ",
+    "price": 11386,
+    "volume": 885820,
+    "ema9": 11944.175214305633,
+    "rvol": 2.2217830146040436,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 37,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 11692.322636870485,
+      "kalman_velocity": -62.79064127223184,
+      "trend_strength": -677.394704873199,
+      "confidence": 677.394704873199,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:10:50.397Z"
+  },
+  {
+    "symbol": "INDORAMA-EQ",
+    "price": 95.81,
+    "volume": 1609228,
+    "ema9": 97.95825338227908,
+    "rvol": 0.5438329154822418,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 104.93107049730922,
+      "kalman_velocity": 1.378045024060227,
+      "trend_strength": 14.86655309551799,
+      "confidence": 14.86655309551799,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:10:51.133Z"
+  },
+  {
+    "symbol": "SILVERAXIS-EQ",
+    "price": 217.05,
+    "volume": 268551,
+    "ema9": 222.0132352348671,
+    "rvol": 0.47074552280692655,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 219.64382211075542,
+      "kalman_velocity": -0.8683095298286345,
+      "trend_strength": -9.367451355477252,
+      "confidence": 9.367451355477252,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:10:51.836Z"
+  },
+  {
+    "symbol": "HDFCQUAL-EQ",
+    "price": 54.86,
+    "volume": 10418,
+    "ema9": 56.0376878239295,
+    "rvol": 1.3975919777308248,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 25,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 55.42705581187166,
+      "kalman_velocity": -0.173976522045411,
+      "trend_strength": -1.8768843957950532,
+      "confidence": 1.8768843957950532,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:10:52.560Z"
+  },
+  {
+    "symbol": "JAIBALAJI-EQ",
+    "price": 61.72,
+    "volume": 504237,
+    "ema9": 63.66079225798441,
+    "rvol": 0.7751103013854118,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 5,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 62.53027081121096,
+      "kalman_velocity": -0.3256690545627716,
+      "trend_strength": -3.513365823824483,
+      "confidence": 3.513365823824483,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:10:53.330Z"
+  },
+  {
+    "symbol": "IGL-EQ",
+    "price": 142.79,
+    "volume": 2346741,
+    "ema9": 145.18458004773422,
+    "rvol": 1.2430282163852537,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 14,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 143.50998575826577,
+      "kalman_velocity": -0.547651760045275,
+      "trend_strength": -5.908148011433282,
+      "confidence": 5.908148011433282,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:10:54.087Z"
+  },
+  {
+    "symbol": "SIL-EQ",
+    "price": 15.83,
+    "volume": 44356,
+    "ema9": 16.401309846717677,
+    "rvol": 0.6982079654201628,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 15.735571464668569,
+      "kalman_velocity": -0.15447614093646606,
+      "trend_strength": -1.6665114064678945,
+      "confidence": 1.6665114064678945,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:10:54.786Z"
+  },
+  {
+    "symbol": "PETRONET-EQ",
+    "price": 285.5,
+    "volume": 1678508,
+    "ema9": 285.7744267993164,
+    "rvol": 1.0101128149516445,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 3,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 284.9025619736977,
+      "kalman_velocity": -0.20426725594590833,
+      "trend_strength": -2.203665303509625,
+      "confidence": 2.203665303509625,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:10:55.475Z"
+  },
+  {
+    "symbol": "XPROINDIA-EQ",
+    "price": 1136.2,
+    "volume": 42823,
+    "ema9": 1179.2737711671475,
+    "rvol": 0.5145381076369071,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 13,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 1162.0276666567195,
+      "kalman_velocity": -8.084661125009642,
+      "trend_strength": -87.21851737478,
+      "confidence": 87.21851737478,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:10:56.244Z"
+  },
+  {
+    "symbol": "APARINDS-EQ",
+    "price": 17648,
+    "volume": 138360,
+    "ema9": 17686.61398179663,
+    "rvol": 1.0022618985097547,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 2,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 17754.5116893154,
+      "kalman_velocity": -5.06126927870946,
+      "trend_strength": -54.60171993579197,
+      "confidence": 54.60171993579197,
+      "trend_changed": true
+    },
+    "timestamp": "2026-10-03T12:10:57.008Z"
+  },
+  {
+    "symbol": "WESTLIFE-EQ",
+    "price": 588.05,
+    "volume": 119967,
+    "ema9": 581.3821831359861,
+    "rvol": 0.22835298692681197,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 10,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 588.0692691953701,
+      "kalman_velocity": 2.4569066615969097,
+      "trend_strength": 26.505471662851825,
+      "confidence": 26.505471662851825,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:10:57.713Z"
+  },
+  {
+    "symbol": "NEWGEN-EQ",
+    "price": 456.35,
+    "volume": 629816,
+    "ema9": 478.6639895964522,
+    "rvol": 0.8547899662856492,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 468.1640523331172,
+      "kalman_velocity": -3.2191389608519616,
+      "trend_strength": -34.72854619971016,
+      "confidence": 34.72854619971016,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:10:58.385Z"
+  },
+  {
+    "symbol": "JPPOWER-EQ",
+    "price": 14.8,
+    "volume": 41402005,
+    "ema9": 15.454901437004118,
+    "rvol": 0.5965634342312727,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 15.207524967475127,
+      "kalman_velocity": -0.07459010265537501,
+      "trend_strength": -0.8046890356739215,
+      "confidence": 0.8046890356739215,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:10:59.060Z"
+  },
+  {
+    "symbol": "GOKEX-EQ",
+    "price": 688.75,
+    "volume": 207663,
+    "ema9": 695.8200698252842,
+    "rvol": 0.711259911290737,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 13,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 673.647054984918,
+      "kalman_velocity": -5.608148076499827,
+      "trend_strength": -60.50152911634325,
+      "confidence": 60.50152911634325,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:10:59.739Z"
+  },
+  {
+    "symbol": "ALLDIGI-EQ",
+    "price": 756.35,
+    "volume": 6690,
+    "ema9": 773.7305365886891,
+    "rvol": 1.267573610216378,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 17,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 765.6989414259732,
+      "kalman_velocity": -2.4095196046635072,
+      "trend_strength": -25.994253099132404,
+      "confidence": 25.994253099132404,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:00.428Z"
+  },
+  {
+    "symbol": "63MOONS-EQ",
+    "price": 802.25,
+    "volume": 207253,
+    "ema9": 830.8803844570168,
+    "rvol": 0.3983351465568629,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 8,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 829.3749190200921,
+      "kalman_velocity": -3.3263650039683865,
+      "trend_strength": -35.88531657758641,
+      "confidence": 35.88531657758641,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:01.095Z"
+  },
+  {
+    "symbol": "GEOJITFSL-EQ",
+    "price": 75.7,
+    "volume": 221521,
+    "ema9": 78.27900944705789,
+    "rvol": 0.6546738245433603,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 77.55481735297825,
+      "kalman_velocity": -0.3024936146707235,
+      "trend_strength": -3.2633457579691743,
+      "confidence": 3.2633457579691743,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:01.777Z"
+  },
+  {
+    "symbol": "GENUSPOWER-EQ",
+    "price": 280,
+    "volume": 2287333,
+    "ema9": 297.01134511025936,
+    "rvol": 1.3202193322907987,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 17,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 288.524997150375,
+      "kalman_velocity": -2.670306246769767,
+      "trend_strength": -28.807657881837905,
+      "confidence": 28.807657881837905,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:02.507Z"
+  },
+  {
+    "symbol": "SPLIL-EQ",
+    "price": 28.5,
+    "volume": 3855,
+    "ema9": 29.68124771413865,
+    "rvol": 0.5072468535563202,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 29.344209870452335,
+      "kalman_velocity": -0.1031537040567239,
+      "trend_strength": -1.1128373830923628,
+      "confidence": 1.1128373830923628,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:03.182Z"
+  },
+  {
+    "symbol": "BIKAJI-EQ",
+    "price": 504.05,
+    "volume": 604474,
+    "ema9": 543.0030780002782,
+    "rvol": 1.4869618341116335,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 533.0413395544784,
+      "kalman_velocity": -3.4995364419750166,
+      "trend_strength": -37.75351560795441,
+      "confidence": 37.75351560795441,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:03.915Z"
+  },
+  {
+    "symbol": "SASKEN-EQ",
+    "price": 1720.5,
+    "volume": 33306,
+    "ema9": 1707.6145663814814,
+    "rvol": 1.2774330139686876,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 1668.097858942512,
+      "kalman_velocity": -8.779489682770135,
+      "trend_strength": -94.71443040075172,
+      "confidence": 94.71443040075172,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:04.609Z"
+  },
+  {
+    "symbol": "ICIL-EQ",
+    "price": 443.65,
+    "volume": 435107,
+    "ema9": 446.69244373842,
+    "rvol": 0.7624214121496057,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 448.67749597017604,
+      "kalman_velocity": 0.3314096809843507,
+      "trend_strength": 3.575296548879087,
+      "confidence": 3.575296548879087,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:05.294Z"
+  },
+  {
+    "symbol": "SYNCOMF-EQ",
+    "price": 23.96,
+    "volume": 44387615,
+    "ema9": 22.553183114340175,
+    "rvol": 1.4215235949535463,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 10,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 23.44034285633838,
+      "kalman_velocity": 0.34208072324767247,
+      "trend_strength": 3.6904173276797483,
+      "confidence": 3.6904173276797483,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:06.023Z"
+  },
+  {
+    "symbol": "SUZLON-EQ",
+    "price": 38.91,
+    "volume": 53247107,
+    "ema9": 40.58504626613391,
+    "rvol": 0.9903379620217937,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 22,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 39.24504849484844,
+      "kalman_velocity": -0.3874919318925823,
+      "trend_strength": -4.180320148461381,
+      "confidence": 4.180320148461381,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:06.786Z"
+  },
+  {
+    "symbol": "RENUKA-EQ",
+    "price": 21.34,
+    "volume": 18593657,
+    "ema9": 22.52972576227532,
+    "rvol": 1.2861687017343866,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 22.07064746552342,
+      "kalman_velocity": -0.15519953812729245,
+      "trend_strength": -1.6743155221236246,
+      "confidence": 1.6743155221236246,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:07.474Z"
+  },
+  {
+    "symbol": "RUSTOMJEE-EQ",
+    "price": 361.25,
+    "volume": 71241,
+    "ema9": 360.67013196578785,
+    "rvol": 0.6413814896875335,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 10,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 360.02035550061396,
+      "kalman_velocity": 0.3591719060022542,
+      "trend_strength": 3.874799529603425,
+      "confidence": 3.874799529603425,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:08.183Z"
+  },
+  {
+    "symbol": "GRASIM-EQ",
+    "price": 2962,
+    "volume": 1385746,
+    "ema9": 3109.3633251935576,
+    "rvol": 1.5777441285006424,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 14,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 3063.6121050851257,
+      "kalman_velocity": -15.748634992368874,
+      "trend_strength": -169.89859852775894,
+      "confidence": 169.89859852775894,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:08.879Z"
+  },
+  {
+    "symbol": "SWSOLAR-EQ",
+    "price": 164.82,
+    "volume": 1363945,
+    "ema9": 172.80472974860686,
+    "rvol": 1.1336717280417987,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 169.1520477499663,
+      "kalman_velocity": -0.9875169040161574,
+      "trend_strength": -10.653478101188746,
+      "confidence": 10.653478101188746,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:09.608Z"
+  },
+  {
+    "symbol": "MBAPL-EQ",
+    "price": 165.83,
+    "volume": 867077,
+    "ema9": 166.20839466612122,
+    "rvol": 0.8384603483121078,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 167.24366675549464,
+      "kalman_velocity": 0.43056839620584464,
+      "trend_strength": 4.645035402824733,
+      "confidence": 4.645035402824733,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:10.309Z"
+  },
+  {
+    "symbol": "UNIPARTS-EQ",
+    "price": 819.3,
+    "volume": 141001,
+    "ema9": 842.4656643075394,
+    "rvol": 1.0383922561526147,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 10,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 834.3351156532658,
+      "kalman_velocity": -3.3906648797333583,
+      "trend_strength": -36.57899312690457,
+      "confidence": 36.57899312690457,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:11.025Z"
+  },
+  {
+    "symbol": "KEC-EQ",
+    "price": 372.35,
+    "volume": 624895,
+    "ema9": 387.11243241973585,
+    "rvol": 0.5572341028394511,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 380.66804033594843,
+      "kalman_velocity": -2.036800757329608,
+      "trend_strength": -21.973307167145563,
+      "confidence": 21.973307167145563,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:11.721Z"
+  },
+  {
+    "symbol": "AFSL-EQ",
+    "price": 201,
+    "volume": 32860,
+    "ema9": 201.46378743865438,
+    "rvol": 3.890622132501376,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 5,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 200.83657834212372,
+      "kalman_velocity": -0.13193308730117437,
+      "trend_strength": -1.423313616879906,
+      "confidence": 1.423313616879906,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:12.412Z"
+  },
+  {
+    "symbol": "MALUPAPER-EQ",
+    "price": 31.04,
+    "volume": 7568,
+    "ema9": 31.80456511276822,
+    "rvol": 0.25567524379181794,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 31.586468132396107,
+      "kalman_velocity": -0.09919595385782198,
+      "trend_strength": -1.070140589850141,
+      "confidence": 1.070140589850141,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:13.096Z"
+  },
+  {
+    "symbol": "KKCL-EQ",
+    "price": 475.65,
+    "volume": 30350,
+    "ema9": 473.1350085479619,
+    "rvol": 0.9840700618975206,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 463.8661498194736,
+      "kalman_velocity": -2.3874079786994833,
+      "trend_strength": -25.755709614933423,
+      "confidence": 25.755709614933423,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:13.795Z"
+  },
+  {
+    "symbol": "SUNTV-EQ",
+    "price": 599.9,
+    "volume": 6014245,
+    "ema9": 540.0231850698411,
+    "rvol": 1.9236463146417904,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 8,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 560.3471736906738,
+      "kalman_velocity": 8.832591726780642,
+      "trend_strength": 95.28730308849362,
+      "confidence": 95.28730308849362,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:14.535Z"
+  },
+  {
+    "symbol": "RATNAMANI-EQ",
+    "price": 2619.4,
+    "volume": 45999,
+    "ema9": 2742.470493147908,
+    "rvol": 0.8198997561636413,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 2,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 2763.1085691024887,
+      "kalman_velocity": -1.9726550827042604,
+      "trend_strength": -21.281294162479128,
+      "confidence": 21.281294162479128,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:15.230Z"
+  },
+  {
+    "symbol": "PFOCUS-EQ",
+    "price": 301.55,
+    "volume": 3922858,
+    "ema9": 318.19499790736194,
+    "rvol": 1.2308128570727779,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 322.1025359711075,
+      "kalman_velocity": -0.4246439235544705,
+      "trend_strength": -4.58112131751053,
+      "confidence": 4.58112131751053,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:15.949Z"
+  },
+  {
+    "symbol": "ALLCARGO-EQ",
+    "price": 10.12,
+    "volume": 4561834,
+    "ema9": 10.683151006670045,
+    "rvol": 0.42853542768215364,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 15,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 10.276149509656967,
+      "kalman_velocity": -0.13191681725295357,
+      "trend_strength": -1.4231380931985183,
+      "confidence": 1.4231380931985183,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:16.618Z"
+  },
+  {
+    "symbol": "EMAMILTD-EQ",
+    "price": 372.65,
+    "volume": 2237638,
+    "ema9": 380.69899355746645,
+    "rvol": 0.8246041241445927,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 3,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 382.6376965112097,
+      "kalman_velocity": 0.5331259597078892,
+      "trend_strength": 5.751441533633031,
+      "confidence": 5.751441533633031,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:17.314Z"
+  },
+  {
+    "symbol": "NECCLTD-EQ",
+    "price": 18.41,
+    "volume": 47266,
+    "ema9": 18.69863476814206,
+    "rvol": 0.42988748491355594,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 5,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 18.898415258519982,
+      "kalman_velocity": -0.02197371568537351,
+      "trend_strength": -0.2370556877596944,
+      "confidence": 0.2370556877596944,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:18.072Z"
+  },
+  {
+    "symbol": "TECHM-EQ",
+    "price": 1533,
+    "volume": 2663224,
+    "ema9": 1537.634522815239,
+    "rvol": 1.460043964295032,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 1526.1085352706564,
+      "kalman_velocity": -2.7861967936785854,
+      "trend_strength": -30.057902205359564,
+      "confidence": 30.057902205359564,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:18.835Z"
+  },
+  {
+    "symbol": "ANANTRAJ-EQ",
+    "price": 577.85,
+    "volume": 1533673,
+    "ema9": 601.7439729509259,
+    "rvol": 0.5157485483660736,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 600.3279665452015,
+      "kalman_velocity": -0.8784441359141817,
+      "trend_strength": -9.476784981623245,
+      "confidence": 9.476784981623245,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:19.536Z"
+  },
+  {
+    "symbol": "TALBROAUTO-EQ",
+    "price": 419.7,
+    "volume": 208135,
+    "ema9": 439.2630171265752,
+    "rvol": 0.5250875072263076,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 445.68516340780303,
+      "kalman_velocity": 0.16818566138318303,
+      "trend_strength": 1.8144117363386114,
+      "confidence": 1.8144117363386114,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:20.230Z"
+  },
+  {
+    "symbol": "HINDCOMPOS-EQ",
+    "price": 380.8,
+    "volume": 1341,
+    "ema9": 381.23418501682494,
+    "rvol": 0.3355897846569652,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 377.65937839202235,
+      "kalman_velocity": -0.46299532052900244,
+      "trend_strength": -4.994861848084261,
+      "confidence": 4.994861848084261,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:20.931Z"
+  },
+  {
+    "symbol": "SHYAMTEL-EQ",
+    "price": 10.32,
+    "volume": 3810,
+    "ema9": 10.936782761515989,
+    "rvol": 0.7950170584368838,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 29,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 10.629527559804744,
+      "kalman_velocity": -0.059676176684710515,
+      "trend_strength": -0.643795401261133,
+      "confidence": 0.643795401261133,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:21.637Z"
+  },
+  {
+    "symbol": "HBLENGINE-EQ",
+    "price": 779.35,
+    "volume": 1396672,
+    "ema9": 778.6852114200155,
+    "rvol": 0.47646917629187585,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 11,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 801.8531214385541,
+      "kalman_velocity": 5.891103460077761,
+      "trend_strength": 63.55409355377354,
+      "confidence": 63.55409355377354,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:22.336Z"
+  },
+  {
+    "symbol": "HINDPETRO-EQ",
+    "price": 345,
+    "volume": 5754484,
+    "ema9": 350.00801169714464,
+    "rvol": 1.5069838729231824,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 347.7493110891293,
+      "kalman_velocity": -0.5604943009916568,
+      "trend_strength": -6.046695238502985,
+      "confidence": 6.046695238502985,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:23.033Z"
+  },
+  {
+    "symbol": "ZEEMEDIA-EQ",
+    "price": 7.2,
+    "volume": 764827,
+    "ema9": 7.3346712957209075,
+    "rvol": 0.5069859743582732,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 7.10965634968494,
+      "kalman_velocity": -0.045663876207652956,
+      "trend_strength": -0.49262863573793053,
+      "confidence": 0.49262863573793053,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:23.806Z"
+  },
+  {
+    "symbol": "GLOBAL-EQ",
+    "price": 136.51,
+    "volume": 605881,
+    "ema9": 133.40278107299866,
+    "rvol": 2.21207163043262,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 22,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 137.65002402254996,
+      "kalman_velocity": 0.860909298170417,
+      "trend_strength": 9.287616564200349,
+      "confidence": 9.287616564200349,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:24.535Z"
+  },
+  {
+    "symbol": "AUTOIND-EQ",
+    "price": 81.4,
+    "volume": 141949,
+    "ema9": 82.49566125141936,
+    "rvol": 0.4395947771622788,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 5,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 81.58765327880984,
+      "kalman_velocity": -0.1345891987940183,
+      "trend_strength": -1.4519681396614883,
+      "confidence": 1.4519681396614883,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:25.226Z"
+  },
+  {
+    "symbol": "UNOMINDA-EQ",
+    "price": 1111,
+    "volume": 788650,
+    "ema9": 1179.5649492791176,
+    "rvol": 1.4411072908169678,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 8,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 1163.523751896078,
+      "kalman_velocity": -6.118176052184135,
+      "trend_strength": -66.00378618946117,
+      "confidence": 66.00378618946117,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:25.893Z"
+  },
+  {
+    "symbol": "NINSYS-EQ",
+    "price": 804.65,
+    "volume": 18078,
+    "ema9": 741.2617348432968,
+    "rvol": 3.9680414407691127,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 3,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 748.0561972117482,
+      "kalman_velocity": 4.185397059058319,
+      "trend_strength": 45.15268116638541,
+      "confidence": 45.15268116638541,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:26.652Z"
+  },
+  {
+    "symbol": "JKTYRE-EQ",
+    "price": 340.35,
+    "volume": 487795,
+    "ema9": 344.4248947125376,
+    "rvol": 1.0147103303063674,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 338.46014363874093,
+      "kalman_velocity": -1.2879685799938785,
+      "trend_strength": -13.894795123182464,
+      "confidence": 13.894795123182464,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:27.349Z"
+  },
+  {
+    "symbol": "WEBELSOLAR-EQ",
+    "price": 68.7,
+    "volume": 2357402,
+    "ema9": 71.50972539547377,
+    "rvol": 1.2357029903840226,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 5,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 70.29443387530567,
+      "kalman_velocity": -0.30796207457926744,
+      "trend_strength": -3.322340310514017,
+      "confidence": 3.322340310514017,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:28.029Z"
+  },
+  {
+    "symbol": "SUPREMEINF-EQ",
+    "price": 66.94,
+    "volume": 282079,
+    "ema9": 76.71615371397695,
+    "rvol": 4.567485534274479,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 14,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 74.7327337946415,
+      "kalman_velocity": -0.7845056982211873,
+      "trend_strength": -8.463363252079034,
+      "confidence": 8.463363252079034,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:28.875Z"
+  },
+  {
+    "symbol": "TAKE-EQ",
+    "price": 12.65,
+    "volume": 139867,
+    "ema9": 14.524312876019813,
+    "rvol": 0.3869878861367408,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 11,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 13.987337174429713,
+      "kalman_velocity": -0.20098731874936326,
+      "trend_strength": -2.1682808569704743,
+      "confidence": 2.1682808569704743,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:29.591Z"
+  },
+  {
+    "symbol": "RHL-EQ",
+    "price": 162.92,
+    "volume": 2514,
+    "ema9": 168.06937496027302,
+    "rvol": 0.5834841944018938,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 5,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 167.93371056749362,
+      "kalman_velocity": -0.43877333459360435,
+      "trend_strength": -4.733551489060934,
+      "confidence": 4.733551489060934,
+      "trend_changed": true
+    },
+    "timestamp": "2026-10-03T12:11:30.358Z"
+  },
+  {
+    "symbol": "TARIL-EQ",
+    "price": 280.8,
+    "volume": 57280414,
+    "ema9": 277.6911716585158,
+    "rvol": 15.528554434462093,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 272.48047371263294,
+      "kalman_velocity": -1.201092977477257,
+      "trend_strength": -12.957568301875046,
+      "confidence": 12.957568301875046,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:31.041Z"
+  },
+  {
+    "symbol": "GSS-EQ",
+    "price": 10.33,
+    "volume": 28600,
+    "ema9": 10.42165471825161,
+    "rvol": 0.496481663595482,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 10.169931458350645,
+      "kalman_velocity": -0.03627952792565106,
+      "trend_strength": -0.3913889015018474,
+      "confidence": 0.3913889015018474,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:31.841Z"
+  },
+  {
+    "symbol": "PIGL-EQ",
+    "price": 93.87,
+    "volume": 40347,
+    "ema9": 97.75321537928468,
+    "rvol": 0.5938578609224248,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 5,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 96.92757939189161,
+      "kalman_velocity": -0.3578226646978464,
+      "trend_strength": -3.8602437152864555,
+      "confidence": 3.8602437152864555,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:32.547Z"
+  },
+  {
+    "symbol": "TARC-EQ",
+    "price": 125.58,
+    "volume": 360964,
+    "ema9": 127.57627443545317,
+    "rvol": 0.703754318845564,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 7,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 128.05047092764718,
+      "kalman_velocity": -0.1175492599298959,
+      "trend_strength": -1.2681387643908117,
+      "confidence": 1.2681387643908117,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:33.247Z"
+  },
+  {
+    "symbol": "MGEL-EQ",
+    "price": 15.34,
+    "volume": 442161,
+    "ema9": 15.713542022163672,
+    "rvol": 0.20949044133323858,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 15.918158660179357,
+      "kalman_velocity": 0.03375285990130298,
+      "trend_strength": 0.3641308339620479,
+      "confidence": 0.3641308339620479,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:33.996Z"
+  },
+  {
+    "symbol": "MMP-EQ",
+    "price": 449.6,
+    "volume": 108870,
+    "ema9": 457.4736360979688,
+    "rvol": 0.920210007695887,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 466.04507596482273,
+      "kalman_velocity": 0.8281218377179373,
+      "trend_strength": 8.933900601968709,
+      "confidence": 8.933900601968709,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:34.721Z"
+  },
+  {
+    "symbol": "TOUCHWOOD-EQ",
+    "price": 57.14,
+    "volume": 1063,
+    "ema9": 59.82730545712613,
+    "rvol": 1.2597771983882438,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 5,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 59.52879033871744,
+      "kalman_velocity": -0.16451577775449266,
+      "trend_strength": -1.7748204901400306,
+      "confidence": 1.7748204901400306,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:35.397Z"
+  },
+  {
+    "symbol": "INDBANK-EQ",
+    "price": 25.2,
+    "volume": 11592,
+    "ema9": 25.702037582152897,
+    "rvol": 0.1283549648136655,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 28,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 24.77284600409696,
+      "kalman_velocity": -0.17931075296980312,
+      "trend_strength": -1.9344308662489558,
+      "confidence": 1.9344308662489558,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:36.157Z"
+  },
+  {
+    "symbol": "MAWANASUG-EQ",
+    "price": 138.84,
+    "volume": 169840,
+    "ema9": 139.76817841470805,
+    "rvol": 0.46519794057331865,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 139.9734905535566,
+      "kalman_velocity": 0.4596874529278671,
+      "trend_strength": 4.959176084218338,
+      "confidence": 4.959176084218338,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:36.895Z"
+  },
+  {
+    "symbol": "NEXT50-EQ",
+    "price": 713.61,
+    "volume": 84372,
+    "ema9": 729.253953615542,
+    "rvol": 1.6330591309397078,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 722.9384935736462,
+      "kalman_velocity": -2.0391171756244577,
+      "trend_strength": -21.99829702957426,
+      "confidence": 21.99829702957426,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:37.584Z"
+  },
+  {
+    "symbol": "SHRIPISTON-EQ",
+    "price": 4490.5,
+    "volume": 186749,
+    "ema9": 4583.899669955698,
+    "rvol": 2.186316104953101,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 4612.546845689175,
+      "kalman_velocity": 11.0821218934856,
+      "trend_strength": 119.55556651921522,
+      "confidence": 119.55556651921522,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:38.303Z"
+  },
+  {
+    "symbol": "CYIENTDLM-EQ",
+    "price": 893.9,
+    "volume": 391174,
+    "ema9": 913.0769147243071,
+    "rvol": 0.6188105439859664,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 2,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 928.4926447950916,
+      "kalman_velocity": 1.3548231218022082,
+      "trend_strength": 14.616031786801535,
+      "confidence": 14.616031786801535,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:39.038Z"
+  },
+  {
+    "symbol": "ALBERTDAVD-EQ",
+    "price": 856.7,
+    "volume": 11319,
+    "ema9": 862.2953076511454,
+    "rvol": 2.506782419967444,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 862.6554328366118,
+      "kalman_velocity": 0.42241916171167526,
+      "trend_strength": 4.557120258413529,
+      "confidence": 4.557120258413529,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:39.824Z"
+  },
+  {
+    "symbol": "ASPINWALL-EQ",
+    "price": 240.1,
+    "volume": 23169,
+    "ema9": 247.27461745614804,
+    "rvol": 7.304339601822224,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 5,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 245.1960868400122,
+      "kalman_velocity": -0.9442849597008123,
+      "trend_strength": -10.187085505616725,
+      "confidence": 10.187085505616725,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:40.581Z"
+  },
+  {
+    "symbol": "LLOYDSME-EQ",
+    "price": 1776.8,
+    "volume": 982427,
+    "ema9": 1839.5077542553577,
+    "rvol": 2.6235419566908496,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 1847.1228130599814,
+      "kalman_velocity": 2.4021080376939046,
+      "trend_strength": 25.91429602084338,
+      "confidence": 25.91429602084338,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:41.267Z"
+  },
+  {
+    "symbol": "UTKARSHBNK-EQ",
+    "price": 13.43,
+    "volume": 3995033,
+    "ema9": 13.825698532338459,
+    "rvol": 0.2488110216679726,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 15,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 13.57007370531062,
+      "kalman_velocity": -0.07497146183582057,
+      "trend_strength": -0.8088031947946828,
+      "confidence": 0.8088031947946828,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:42.003Z"
+  },
+  {
+    "symbol": "BANKETF-EQ",
+    "price": 555.87,
+    "volume": 67918,
+    "ema9": 562.7781758258266,
+    "rvol": 1.99025356553642,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 557.5659469824258,
+      "kalman_velocity": -1.6659926067442352,
+      "trend_strength": -17.9729741136681,
+      "confidence": 17.9729741136681,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:42.705Z"
+  },
+  {
+    "symbol": "NETWEB-EQ",
+    "price": 4520.3,
+    "volume": 752580,
+    "ema9": 4621.282300635024,
+    "rvol": 0.6724443976637698,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 7,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 4492.115886305484,
+      "kalman_velocity": -30.579813561261158,
+      "trend_strength": -329.89954175812267,
+      "confidence": 329.89954175812267,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:43.433Z"
+  },
+  {
+    "symbol": "MGL-EQ",
+    "price": 1045.4,
+    "volume": 226314,
+    "ema9": 1062.2464380560232,
+    "rvol": 1.5809658733684853,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 1054.6280226895444,
+      "kalman_velocity": -2.4416933299973014,
+      "trend_strength": -26.34134799632682,
+      "confidence": 26.34134799632682,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:44.105Z"
+  },
+  {
+    "symbol": "MAHEPC-EQ",
+    "price": 96.3,
+    "volume": 13455,
+    "ema9": 98.09779080910515,
+    "rvol": 0.7718010124331378,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 9,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 96.5941673815979,
+      "kalman_velocity": -0.4294443197870139,
+      "trend_strength": -4.632908700523868,
+      "confidence": 4.632908700523868,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:44.774Z"
+  },
+  {
+    "symbol": "POKARNA-EQ",
+    "price": 699.1,
+    "volume": 77946,
+    "ema9": 723.6126981214599,
+    "rvol": 0.5372459065206183,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 34,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 697.0421235687089,
+      "kalman_velocity": -5.952183423195585,
+      "trend_strength": -64.21303321025005,
+      "confidence": 64.21303321025005,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:45.483Z"
+  },
+  {
+    "symbol": "REFEX-EQ",
+    "price": 271.3,
+    "volume": 342794,
+    "ema9": 275.31052401718637,
+    "rvol": 0.565564753018103,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 274.6251306612612,
+      "kalman_velocity": -0.33284162693110014,
+      "trend_strength": -3.590744593083434,
+      "confidence": 3.590744593083434,
+      "trend_changed": true
+    },
+    "timestamp": "2026-10-03T12:11:46.195Z"
+  },
+  {
+    "symbol": "JSWENERGY-EQ",
+    "price": 485,
+    "volume": 1851516,
+    "ema9": 502.2747383310218,
+    "rvol": 1.0621410231717128,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 494.51470070961676,
+      "kalman_velocity": -2.3924102534862164,
+      "trend_strength": -25.809674893583193,
+      "confidence": 25.809674893583193,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:46.906Z"
+  },
+  {
+    "symbol": "MBLINFRA-EQ",
+    "price": 23.11,
+    "volume": 94794,
+    "ema9": 22.128279954342904,
+    "rvol": 1.94249601947537,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 3,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 21.745853155994823,
+      "kalman_velocity": -0.04260238253273482,
+      "trend_strength": -0.4596007901486316,
+      "confidence": 0.4596007901486316,
+      "trend_changed": true
+    },
+    "timestamp": "2026-10-03T12:11:47.624Z"
+  },
+  {
+    "symbol": "LORDSCHLO-EQ",
+    "price": 138.81,
+    "volume": 7956,
+    "ema9": 139.90924610643796,
+    "rvol": 0.2399283471904318,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 3,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 140.715356903783,
+      "kalman_velocity": 0.27098124117381356,
+      "trend_strength": 2.9233856219953216,
+      "confidence": 2.9233856219953216,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:48.351Z"
+  },
+  {
+    "symbol": "RBLBANK-EQ",
+    "price": 411.4,
+    "volume": 5387538,
+    "ema9": 409.42703584266945,
+    "rvol": 1.167223743514168,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 411.8114409721392,
+      "kalman_velocity": 0.06406056471655167,
+      "trend_strength": 0.6910948264095753,
+      "confidence": 0.6910948264095753,
+      "trend_changed": true
+    },
+    "timestamp": "2026-10-03T12:11:49.058Z"
+  },
+  {
+    "symbol": "JLHL-EQ",
+    "price": 259.85,
+    "volume": 143186,
+    "ema9": 265.312106188725,
+    "rvol": 0.7960540324468212,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 29,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 258.5058801432423,
+      "kalman_velocity": -1.8059177760233278,
+      "trend_strength": -19.48250749042086,
+      "confidence": 19.48250749042086,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:49.739Z"
+  },
+  {
+    "symbol": "LTTS-EQ",
+    "price": 3267.8,
+    "volume": 80220,
+    "ema9": 3237.5217655977817,
+    "rvol": 1.3683687124250847,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 3172.2220758196804,
+      "kalman_velocity": -14.559728423094942,
+      "trend_strength": -157.0724989960875,
+      "confidence": 157.0724989960875,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:50.439Z"
+  },
+  {
+    "symbol": "MARATHON-EQ",
+    "price": 388.1,
+    "volume": 84020,
+    "ema9": 400.15331275340236,
+    "rvol": 0.7069061330122725,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 13,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 393.55838403547955,
+      "kalman_velocity": -2.8841834805650697,
+      "trend_strength": -31.11499704465572,
+      "confidence": 31.11499704465572,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:51.152Z"
+  },
+  {
+    "symbol": "MASKINVEST-EQ",
+    "price": 143.41,
+    "volume": 84,
+    "ema9": 145.21302135403542,
+    "rvol": 0.23996571918297385,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 144.77192830118642,
+      "kalman_velocity": 0.03714539203875621,
+      "trend_strength": 0.4007299713408099,
+      "confidence": 0.4007299713408099,
+      "trend_changed": true
+    },
+    "timestamp": "2026-10-03T12:11:51.875Z"
+  },
+  {
+    "symbol": "YATRA-EQ",
+    "price": 98.83,
+    "volume": 2022495,
+    "ema9": 102.8422810065366,
+    "rvol": 1.9117543359829827,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 100.32269760612745,
+      "kalman_velocity": -0.7805441929482314,
+      "trend_strength": -8.420625948543734,
+      "confidence": 8.420625948543734,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:52.595Z"
+  },
+  {
+    "symbol": "ENDURANCE-EQ",
+    "price": 2601.4,
+    "volume": 123076,
+    "ema9": 2662.625707311323,
+    "rvol": 1.3789664921988047,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 3,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 2624.8118470221566,
+      "kalman_velocity": -7.960031703373654,
+      "trend_strength": -85.8739967809927,
+      "confidence": 85.8739967809927,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:53.326Z"
+  },
+  {
+    "symbol": "KSL-EQ",
+    "price": 913,
+    "volume": 248373,
+    "ema9": 952.1028566643346,
+    "rvol": 1.3997975032540093,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 962.1826383716289,
+      "kalman_velocity": 0.5459913781378798,
+      "trend_strength": 5.890235566372234,
+      "confidence": 5.890235566372234,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:54.038Z"
+  },
+  {
+    "symbol": "SUNDARAM-EQ",
+    "price": 1.08,
+    "volume": 874908,
+    "ema9": 1.1252961174841598,
+    "rvol": 2.2699029806311515,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 22,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 1.101780469585741,
+      "kalman_velocity": -0.007848670861816663,
+      "trend_strength": -0.08467261958731385,
+      "confidence": 0.08467261958731385,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:54.768Z"
+  },
+  {
+    "symbol": "RAJRATAN-EQ",
+    "price": 453.55,
+    "volume": 58422,
+    "ema9": 464.23573201775145,
+    "rvol": 0.44019849695669144,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 456.38059019581397,
+      "kalman_velocity": -1.7819398731627298,
+      "trend_strength": -19.22383033563098,
+      "confidence": 19.22383033563098,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:55.466Z"
+  },
+  {
+    "symbol": "NBIFIN-EQ",
+    "price": 1857.9,
+    "volume": 80,
+    "ema9": 1914.0109800426108,
+    "rvol": 0.022419011321600717,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 11,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 1894.8634887222604,
+      "kalman_velocity": -6.824493106349183,
+      "trend_strength": -73.62363881015146,
+      "confidence": 73.62363881015146,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:56.201Z"
+  },
+  {
+    "symbol": "LIQUIDETF-EQ",
+    "price": 1000,
+    "volume": 197180,
+    "ema9": 999.9934126508839,
+    "rvol": 1.5811284564632375,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 999.9934895373322,
+      "kalman_velocity": 0.00009816037412412179,
+      "trend_strength": 0.0010589686028490664,
+      "confidence": 0.0010589686028490664,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:56.899Z"
+  },
+  {
+    "symbol": "IMFA-EQ",
+    "price": 1176.8,
+    "volume": 141199,
+    "ema9": 1216.8569140308505,
+    "rvol": 1.5427209441693859,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 1192.2120299020862,
+      "kalman_velocity": -6.408321884306425,
+      "trend_strength": -69.1339222469756,
+      "confidence": 69.1339222469756,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:57.584Z"
+  },
+  {
+    "symbol": "PLAZACABLE-EQ",
+    "price": 57.12,
+    "volume": 58747,
+    "ema9": 59.42977196776109,
+    "rvol": 0.45242132857708345,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 59.69543623172562,
+      "kalman_velocity": -0.15875426437529977,
+      "trend_strength": -1.7126644335041301,
+      "confidence": 1.7126644335041301,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:58.262Z"
+  },
+  {
+    "symbol": "LMW-EQ",
+    "price": 16548,
+    "volume": 3047,
+    "ema9": 17048.28455594102,
+    "rvol": 0.714486704497491,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 10,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 16626.1480404126,
+      "kalman_velocity": -106.96970816512231,
+      "trend_strength": -1154.004998590926,
+      "confidence": 1154.004998590926,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:59.004Z"
+  },
+  {
+    "symbol": "RADIOCITY-EQ",
+    "price": 5.88,
+    "volume": 76812,
+    "ema9": 6.002251713887803,
+    "rvol": 1.1500567078032182,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 15,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 5.9133018947675575,
+      "kalman_velocity": -0.018716982433487028,
+      "trend_strength": -0.2019215688000273,
+      "confidence": 0.2019215688000273,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:11:59.705Z"
+  },
+  {
+    "symbol": "LICHSGFIN-EQ",
+    "price": 509,
+    "volume": 5986497,
+    "ema9": 544.2503599929782,
+    "rvol": 1.5442605772132416,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 3,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 546.2660963682558,
+      "kalman_velocity": -1.312547721161855,
+      "trend_strength": -14.15995852556487,
+      "confidence": 14.15995852556487,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:00.382Z"
+  },
+  {
+    "symbol": "AHLADA-EQ",
+    "price": 37.06,
+    "volume": 2131,
+    "ema9": 37.60678198238179,
+    "rvol": 0.1530253199098077,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 3,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 37.82212765355436,
+      "kalman_velocity": 0.04982657642330354,
+      "trend_strength": 0.5375364600079662,
+      "confidence": 0.5375364600079662,
+      "trend_changed": true
+    },
+    "timestamp": "2026-10-03T12:12:01.063Z"
+  },
+  {
+    "symbol": "RAMKY-EQ",
+    "price": 274.6,
+    "volume": 171591,
+    "ema9": 299.4087779531948,
+    "rvol": 3.2019757749243785,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 286.98711165814365,
+      "kalman_velocity": -3.6402405899953805,
+      "trend_strength": -39.271452722331986,
+      "confidence": 39.271452722331986,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:01.824Z"
+  },
+  {
+    "symbol": "ADANIENSOL-EQ",
+    "price": 1326.4,
+    "volume": 7267118,
+    "ema9": 1337.1966318210798,
+    "rvol": 4.054698540680946,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 9,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 1308.5261836068985,
+      "kalman_velocity": -6.7185412573705605,
+      "trend_strength": -72.48061462668315,
+      "confidence": 72.48061462668315,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:02.515Z"
+  },
+  {
+    "symbol": "CONFIPET-EQ",
+    "price": 86.05,
+    "volume": 2851230,
+    "ema9": 87.10637825593538,
+    "rvol": 0.7307327769208969,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 88.27206810590212,
+      "kalman_velocity": 0.10268614595308433,
+      "trend_strength": 1.1077932972666928,
+      "confidence": 1.1077932972666928,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:03.215Z"
+  },
+  {
+    "symbol": "DYCL-EQ",
+    "price": 428,
+    "volume": 313267,
+    "ema9": 444.50100106922486,
+    "rvol": 0.5370851992066487,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 5,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 437.40110540149414,
+      "kalman_velocity": -2.4057608264497303,
+      "trend_strength": -25.953702845030584,
+      "confidence": 25.953702845030584,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:03.954Z"
+  },
+  {
+    "symbol": "OFSS-EQ",
+    "price": 10420,
+    "volume": 194062,
+    "ema9": 10796.893752796987,
+    "rvol": 0.8594973679659162,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 9,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 10490.728140151026,
+      "kalman_velocity": -93.76788857998685,
+      "trend_strength": -1011.5818205429439,
+      "confidence": 1011.5818205429439,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:04.678Z"
+  },
+  {
+    "symbol": "NUCLEUS-EQ",
+    "price": 646.95,
+    "volume": 12071,
+    "ema9": 666.3175931791471,
+    "rvol": 0.7439203263857218,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 19,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 651.4120935268006,
+      "kalman_velocity": -4.389434171466801,
+      "trend_strength": -47.353863647448016,
+      "confidence": 47.353863647448016,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:05.341Z"
+  },
+  {
+    "symbol": "APTECHT-EQ",
+    "price": 87.03,
+    "volume": 46982,
+    "ema9": 89.42489676427243,
+    "rvol": 0.6391452306599797,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 89.35977937358483,
+      "kalman_velocity": -0.08947350594739804,
+      "trend_strength": -0.9652533869248987,
+      "confidence": 0.9652533869248987,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:06.012Z"
+  },
+  {
+    "symbol": "OMAXAUTO-EQ",
+    "price": 201.14,
+    "volume": 92836,
+    "ema9": 196.9556285146342,
+    "rvol": 1.0745865082883543,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 11,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 201.60357665350034,
+      "kalman_velocity": 1.6545695714959943,
+      "trend_strength": 17.849740723564782,
+      "confidence": 17.849740723564782,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:06.687Z"
+  },
+  {
+    "symbol": "SATIA-EQ",
+    "price": 68.34,
+    "volume": 125480,
+    "ema9": 68.05641119846787,
+    "rvol": 0.6635842539939067,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 69.43296626065026,
+      "kalman_velocity": 0.25820124873284434,
+      "trend_strength": 2.785513177433101,
+      "confidence": 2.785513177433101,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:07.360Z"
+  },
+  {
+    "symbol": "SHK-EQ",
+    "price": 137.86,
+    "volume": 208064,
+    "ema9": 139.92857823795651,
+    "rvol": 0.5807376113459087,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 137.81118730386697,
+      "kalman_velocity": -0.2727720286783457,
+      "trend_strength": -2.9427049018839257,
+      "confidence": 2.9427049018839257,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:08.150Z"
+  },
+  {
+    "symbol": "POONAWALLA-EQ",
+    "price": 433.4,
+    "volume": 762919,
+    "ema9": 449.7593533500808,
+    "rvol": 0.6129776485665467,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 5,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 447.0496331032709,
+      "kalman_velocity": -1.0918718980558948,
+      "trend_strength": -11.779275177907783,
+      "confidence": 11.779275177907783,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:08.831Z"
+  },
+  {
+    "symbol": "GLAXO-EQ",
+    "price": 2771.1,
+    "volume": 73407,
+    "ema9": 2817.587733383194,
+    "rvol": 0.9267823392836175,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 3,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 2788.0841117762097,
+      "kalman_velocity": -8.746366973038837,
+      "trend_strength": -94.35709771982312,
+      "confidence": 94.35709771982312,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:09.569Z"
+  },
+  {
+    "symbol": "TEXINFRA-EQ",
+    "price": 119.39,
+    "volume": 344580,
+    "ema9": 117.73348056623084,
+    "rvol": 0.8264887014403708,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 2,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 118.7729208688195,
+      "kalman_velocity": 0.2570379894219351,
+      "trend_strength": 2.7729637643097664,
+      "confidence": 2.7729637643097664,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:10.283Z"
+  },
+  {
+    "symbol": "GTL-EQ",
+    "price": 6.82,
+    "volume": 118621,
+    "ema9": 6.928356866546753,
+    "rvol": 0.6898581185153694,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 13,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 6.851816641571626,
+      "kalman_velocity": -0.022340042329233256,
+      "trend_strength": -0.2410076736572218,
+      "confidence": 0.2410076736572218,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:11.029Z"
+  },
+  {
+    "symbol": "DWARKESH-EQ",
+    "price": 41.96,
+    "volume": 1083964,
+    "ema9": 42.73322049283762,
+    "rvol": 0.42845892613440983,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 2,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 41.378404892555025,
+      "kalman_velocity": -0.22593976486659936,
+      "trend_strength": -2.4374715282389405,
+      "confidence": 2.4374715282389405,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:11.709Z"
+  },
+  {
+    "symbol": "JINDALPHOT-EQ",
+    "price": 1031.8,
+    "volume": 779,
+    "ema9": 1055.414368701506,
+    "rvol": 0.11888864300594443,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 7,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 1060.1702454789379,
+      "kalman_velocity": -1.1623627805446903,
+      "trend_strength": -12.53974122144962,
+      "confidence": 12.53974122144962,
+      "trend_changed": true
+    },
+    "timestamp": "2026-10-03T12:12:12.390Z"
+  },
+  {
+    "symbol": "ACEINTEG-EQ",
+    "price": 17.14,
+    "volume": 1162,
+    "ema9": 17.159990211645425,
+    "rvol": 0.36720441150910904,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 5,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 17.05111757831283,
+      "kalman_velocity": -0.04767032886928054,
+      "trend_strength": -0.514274543169781,
+      "confidence": 0.514274543169781,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:13.120Z"
+  },
+  {
+    "symbol": "IIFL-EQ",
+    "price": 583.8,
+    "volume": 1821159,
+    "ema9": 603.7095757158806,
+    "rvol": 0.7054628036246698,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 597.0068225326179,
+      "kalman_velocity": -1.6597312010515848,
+      "trend_strength": -17.905425144979034,
+      "confidence": 17.905425144979034,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:13.820Z"
+  },
+  {
+    "symbol": "SHOPERSTOP-EQ",
+    "price": 404.7,
+    "volume": 137363,
+    "ema9": 407.1506344640556,
+    "rvol": 0.3416026424386752,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 412.4502214555176,
+      "kalman_velocity": 1.8803965944740662,
+      "trend_strength": 20.285995975671508,
+      "confidence": 20.285995975671508,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:14.501Z"
+  },
+  {
+    "symbol": "MANGALAM-EQ",
+    "price": 29.15,
+    "volume": 34164,
+    "ema9": 31.147332964097163,
+    "rvol": 0.4301167323013083,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 9,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 31.10473014679868,
+      "kalman_velocity": -0.14281759026342455,
+      "trend_strength": -1.5407372412037679,
+      "confidence": 1.5407372412037679,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:15.231Z"
+  },
+  {
+    "symbol": "GLAND-EQ",
+    "price": 2874.4,
+    "volume": 327673,
+    "ema9": 2912.119380300046,
+    "rvol": 0.519435000914674,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 2,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 2912.3346901569994,
+      "kalman_velocity": -1.454932136447574,
+      "trend_strength": -15.696022611179908,
+      "confidence": 15.696022611179908,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:15.891Z"
+  },
+  {
+    "symbol": "KENNAMET-EQ",
+    "price": 4277.5,
+    "volume": 40122,
+    "ema9": 4230.934436544206,
+    "rvol": 1.0143113922322586,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 4154.762298271405,
+      "kalman_velocity": -27.871420215877144,
+      "trend_strength": -300.680994635395,
+      "confidence": 300.680994635395,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:16.627Z"
+  },
+  {
+    "symbol": "JSWHL-EQ",
+    "price": 11258,
+    "volume": 3211,
+    "ema9": 11191.184574458928,
+    "rvol": 0.3499174517378725,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 2,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 11111.778188402946,
+      "kalman_velocity": -11.999138440707672,
+      "trend_strength": -129.4484763666584,
+      "confidence": 129.4484763666584,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:17.348Z"
+  },
+  {
+    "symbol": "PRAXIS-EQ",
+    "price": 4.39,
+    "volume": 105275,
+    "ema9": 4.536764333906924,
+    "rvol": 0.8195432355278902,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 4.498546369206967,
+      "kalman_velocity": 0.010623413391405958,
+      "trend_strength": 0.114606951501224,
+      "confidence": 0.114606951501224,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:18.092Z"
+  },
+  {
+    "symbol": "FIVESTAR-EQ",
+    "price": 506.25,
+    "volume": 547397,
+    "ema9": 518.2588511684527,
+    "rvol": 0.7725484401393756,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 514.73595679691,
+      "kalman_velocity": -1.7728079446874763,
+      "trend_strength": -19.12531374352296,
+      "confidence": 19.12531374352296,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:18.824Z"
+  },
+  {
+    "symbol": "AMBUJACEM-EQ",
+    "price": 362.25,
+    "volume": 3893265,
+    "ema9": 376.3829334755895,
+    "rvol": 2.691228288586903,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 369.98275075846436,
+      "kalman_velocity": -1.9209666773525576,
+      "trend_strength": -20.723672017217375,
+      "confidence": 20.723672017217375,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:19.515Z"
+  },
+  {
+    "symbol": "VIMTALABS-EQ",
+    "price": 584.35,
+    "volume": 118361,
+    "ema9": 597.7684078780067,
+    "rvol": 0.7193168613837799,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 8,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 588.468603627421,
+      "kalman_velocity": -2.5978895244028077,
+      "trend_strength": -28.026415593469295,
+      "confidence": 28.026415593469295,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:20.233Z"
+  },
+  {
+    "symbol": "REPRO-EQ",
+    "price": 303.9,
+    "volume": 24042,
+    "ema9": 309.36779222322053,
+    "rvol": 0.46770770311202065,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 308.5604124309195,
+      "kalman_velocity": 0.37591364296250535,
+      "trend_strength": 4.055411858725621,
+      "confidence": 4.055411858725621,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:20.952Z"
+  },
+  {
+    "symbol": "SAKUMA-EQ",
+    "price": 1.54,
+    "volume": 1283553,
+    "ema9": 1.5791913342659074,
+    "rvol": 1.2680463152204322,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 3,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 1.5749149095646393,
+      "kalman_velocity": -0.0014647742194288937,
+      "trend_strength": -0.01580220045490607,
+      "confidence": 0.01580220045490607,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:21.643Z"
+  },
+  {
+    "symbol": "HDFCBANK-EQ",
+    "price": 721.2,
+    "volume": 37389857,
+    "ema9": 722.1521466002118,
+    "rvol": 1.2555278632642792,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 725.593193342863,
+      "kalman_velocity": 0.4973304086317815,
+      "trend_strength": 5.3652738458107905,
+      "confidence": 5.3652738458107905,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:22.345Z"
+  },
+  {
+    "symbol": "KEI-EQ",
+    "price": 4502,
+    "volume": 320912,
+    "ema9": 4556.732926525357,
+    "rvol": 0.5124455826375429,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 4422.65264196835,
+      "kalman_velocity": -24.099985801270325,
+      "trend_strength": -259.9942035712153,
+      "confidence": 259.9942035712153,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:23.021Z"
+  },
+  {
+    "symbol": "KAMDHENU-EQ",
+    "price": 37.59,
+    "volume": 1112530,
+    "ema9": 39.016784492891375,
+    "rvol": 1.0813993776264843,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 39.34690543373579,
+      "kalman_velocity": -0.06907593433920002,
+      "trend_strength": -0.7452013740817732,
+      "confidence": 0.7452013740817732,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:23.795Z"
+  },
+  {
+    "symbol": "JKLAKSHMI-EQ",
+    "price": 476.6,
+    "volume": 290321,
+    "ema9": 497.0860503535412,
+    "rvol": 1.9369557501341024,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 8,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 491.0774755281289,
+      "kalman_velocity": -1.9258709016287083,
+      "trend_strength": -20.7765795124884,
+      "confidence": 20.7765795124884,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:24.524Z"
+  },
+  {
+    "symbol": "INFOMEDIA-EQ",
+    "price": 5.32,
+    "volume": 17374,
+    "ema9": 5.317802347335193,
+    "rvol": 1.0830928053562412,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 2,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 5.325320810854494,
+      "kalman_velocity": -0.0014314120102883233,
+      "trend_strength": -0.0154422840190042,
+      "confidence": 0.0154422840190042,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:25.241Z"
+  },
+  {
+    "symbol": "GESHIP-EQ",
+    "price": 1530.6,
+    "volume": 574389,
+    "ema9": 1506.0729363715523,
+    "rvol": 0.5596564360797069,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 20,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 1547.293287322141,
+      "kalman_velocity": 11.459104509592029,
+      "trend_strength": 123.62251061797971,
+      "confidence": 123.62251061797971,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:25.909Z"
+  },
+  {
+    "symbol": "SOBHA-EQ",
+    "price": 1213.1,
+    "volume": 86762,
+    "ema9": 1220.3406997984277,
+    "rvol": 1.0413274819023113,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 1213.7440241245083,
+      "kalman_velocity": -0.7171535127408215,
+      "trend_strength": -7.736757935082314,
+      "confidence": 7.736757935082314,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:26.612Z"
+  },
+  {
+    "symbol": "BANCOINDIA-EQ",
+    "price": 589.85,
+    "volume": 78841,
+    "ema9": 599.7916667767372,
+    "rvol": 0.8866638850995348,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 594.6862703060993,
+      "kalman_velocity": -1.2316131269067576,
+      "trend_strength": -13.286824178174328,
+      "confidence": 13.286824178174328,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:27.329Z"
+  },
+  {
+    "symbol": "ASMS-EQ",
+    "price": 5.92,
+    "volume": 174867,
+    "ema9": 6.280766059023588,
+    "rvol": 0.7915211140419667,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 18,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 6.09090774794042,
+      "kalman_velocity": -0.06308348863535386,
+      "trend_strength": -0.6805539854458384,
+      "confidence": 0.6805539854458384,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:28.091Z"
+  },
+  {
+    "symbol": "BALKRISHNA-EQ",
+    "price": 15.94,
+    "volume": 7587,
+    "ema9": 16.170678109754625,
+    "rvol": 0.685805710979942,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 15.973510156410171,
+      "kalman_velocity": -0.04584411386539442,
+      "trend_strength": -0.4945730661896515,
+      "confidence": 0.4945730661896515,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:28.796Z"
+  },
+  {
+    "symbol": "IGPL-EQ",
+    "price": 569.55,
+    "volume": 61516,
+    "ema9": 575.2213234413412,
+    "rvol": 0.6315529029247666,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 585.8151523905126,
+      "kalman_velocity": 2.1366237400461396,
+      "trend_strength": 23.050212236862237,
+      "confidence": 23.050212236862237,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:29.460Z"
+  },
+  {
+    "symbol": "SYNGENE-EQ",
+    "price": 361.3,
+    "volume": 530462,
+    "ema9": 372.2157218202439,
+    "rvol": 0.8446934562220787,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 366.6438708417975,
+      "kalman_velocity": -1.5941247400750305,
+      "trend_strength": -17.197652961568615,
+      "confidence": 17.197652961568615,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:30.188Z"
+  },
+  {
+    "symbol": "PTL-EQ",
+    "price": 37.87,
+    "volume": 23708,
+    "ema9": 38.07003610817092,
+    "rvol": 0.6993159635062549,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 2,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 37.98489431329775,
+      "kalman_velocity": -0.026030793212793602,
+      "trend_strength": -0.280824038880991,
+      "confidence": 0.280824038880991,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:30.867Z"
+  },
+  {
+    "symbol": "TIMKEN-EQ",
+    "price": 3098.8,
+    "volume": 44275,
+    "ema9": 3156.27577481166,
+    "rvol": 1.0665102531923043,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 5,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 3154.1756199093757,
+      "kalman_velocity": -3.794094464422636,
+      "trend_strength": -40.93125102586259,
+      "confidence": 40.93125102586259,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:31.540Z"
+  },
+  {
+    "symbol": "DGCONTENT-EQ",
+    "price": 25.43,
+    "volume": 92788,
+    "ema9": 24.66222674208393,
+    "rvol": 3.9174361117795815,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 3,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 24.707967466771105,
+      "kalman_velocity": 0.05752304057498572,
+      "trend_strength": 0.6205670511432332,
+      "confidence": 0.6205670511432332,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:32.223Z"
+  },
+  {
+    "symbol": "HSCL-EQ",
+    "price": 665.15,
+    "volume": 1431438,
+    "ema9": 670.0832574414806,
+    "rvol": 0.6175885756481159,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 670.3264146817929,
+      "kalman_velocity": 0.6418102625514586,
+      "trend_strength": 6.923943832659992,
+      "confidence": 6.923943832659992,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:32.963Z"
+  },
+  {
+    "symbol": "SHARDAMOTR-EQ",
+    "price": 928.8,
+    "volume": 56275,
+    "ema9": 950.9696492153282,
+    "rvol": 0.7041786480270484,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 964.3692056314384,
+      "kalman_velocity": 2.092928077539489,
+      "trend_strength": 22.578816981005513,
+      "confidence": 22.578816981005513,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:33.689Z"
+  },
+  {
+    "symbol": "KRBL-EQ",
+    "price": 375.9,
+    "volume": 470715,
+    "ema9": 389.05446209000684,
+    "rvol": 1.1251212299212476,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 380.52308574143734,
+      "kalman_velocity": -2.603153837915373,
+      "trend_strength": -28.08320778456579,
+      "confidence": 28.08320778456579,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:34.386Z"
+  },
+  {
+    "symbol": "HLVLTD-EQ",
+    "price": 6.31,
+    "volume": 154005,
+    "ema9": 6.43889304225486,
+    "rvol": 0.7808942673066411,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 6.42853556098303,
+      "kalman_velocity": -0.008325943912636854,
+      "trend_strength": -0.08982151169692906,
+      "confidence": 0.08982151169692906,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:35.169Z"
+  },
+  {
+    "symbol": "TCI-EQ",
+    "price": 877.1,
+    "volume": 48610,
+    "ema9": 860.1109763403242,
+    "rvol": 0.13953725359051514,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 857.3955455053274,
+      "kalman_velocity": 1.5328541760008778,
+      "trend_strength": 16.536657073845777,
+      "confidence": 16.536657073845777,
+      "trend_changed": true
+    },
+    "timestamp": "2026-10-03T12:12:35.875Z"
+  },
+  {
+    "symbol": "LOYALTEX-EQ",
+    "price": 207.5,
+    "volume": 156,
+    "ema9": 212.31300850188677,
+    "rvol": 0.04551754321978262,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 211.93971615116888,
+      "kalman_velocity": -0.25726479204510794,
+      "trend_strength": -2.775410544480756,
+      "confidence": 2.775410544480756,
+      "trend_changed": true
+    },
+    "timestamp": "2026-10-03T12:12:36.531Z"
+  },
+  {
+    "symbol": "DIVGIITTS-EQ",
+    "price": 1136.4,
+    "volume": 129545,
+    "ema9": 1167.5237707458364,
+    "rvol": 0.963198880549435,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 1161.6911012817502,
+      "kalman_velocity": 0.07737267158760686,
+      "trend_strength": 0.8347077999745831,
+      "confidence": 0.8347077999745831,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:37.194Z"
+  },
+  {
+    "symbol": "BALAMINES-EQ",
+    "price": 2052.2,
+    "volume": 213491,
+    "ema9": 2150.682213082981,
+    "rvol": 1.0907682627722979,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 5,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 2102.375449517093,
+      "kalman_velocity": -14.876166941197463,
+      "trend_strength": -160.48628443030893,
+      "confidence": 160.48628443030893,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:37.900Z"
+  },
+  {
+    "symbol": "GSLSU-EQ",
+    "price": 29.96,
+    "volume": 35027,
+    "ema9": 30.353970885137766,
+    "rvol": 0.4862973331880194,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 30.979661200228083,
+      "kalman_velocity": 0.18062978178680658,
+      "trend_strength": 1.948660743792959,
+      "confidence": 1.948660743792959,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:38.629Z"
+  },
+  {
+    "symbol": "JSWDULUX-EQ",
+    "price": 3020.6,
+    "volume": 22765,
+    "ema9": 3102.0206685656235,
+    "rvol": 0.6242253737400327,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 3,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 3091.5276817341883,
+      "kalman_velocity": -6.3453235979905696,
+      "trend_strength": -68.45428743672691,
+      "confidence": 68.45428743672691,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:39.294Z"
+  },
+  {
+    "symbol": "MNC-EQ",
+    "price": 30.9,
+    "volume": 138200,
+    "ema9": 31.83141275999489,
+    "rvol": 1.7724322657058085,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 9,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 31.442392220551675,
+      "kalman_velocity": -0.1127128806569625,
+      "trend_strength": -1.2159631910272632,
+      "confidence": 1.2159631910272632,
+      "trend_changed": true
+    },
+    "timestamp": "2026-10-03T12:12:40.339Z"
+  },
+  {
+    "symbol": "WSI-EQ",
+    "price": 53.2,
+    "volume": 39222,
+    "ema9": 55.73360519526169,
+    "rvol": 0.8158748417788991,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 13,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 54.5760716169324,
+      "kalman_velocity": -0.3857291090124271,
+      "trend_strength": -4.161302555067657,
+      "confidence": 4.161302555067657,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:41.121Z"
+  },
+  {
+    "symbol": "IFBIND-EQ",
+    "price": 1166.2,
+    "volume": 41264,
+    "ema9": 1211.320036702026,
+    "rvol": 1.2994468596333497,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 1184.6496073066157,
+      "kalman_velocity": -6.704175180379529,
+      "trend_strength": -72.32563126791582,
+      "confidence": 72.32563126791582,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:41.849Z"
+  },
+  {
+    "symbol": "OMAXE-EQ",
+    "price": 108.78,
+    "volume": 343801,
+    "ema9": 113.37716543429032,
+    "rvol": 0.25783010425440184,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 111.25406750285065,
+      "kalman_velocity": -0.9697999892741689,
+      "trend_strength": -10.462345410237548,
+      "confidence": 10.462345410237548,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:42.607Z"
+  },
+  {
+    "symbol": "CIEINDIA-EQ",
+    "price": 376.35,
+    "volume": 259700,
+    "ema9": 383.23218936934325,
+    "rvol": 0.990460005171597,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 382.42045896184084,
+      "kalman_velocity": -0.23922036697255433,
+      "trend_strength": -2.580744623748481,
+      "confidence": 2.580744623748481,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:43.316Z"
+  },
+  {
+    "symbol": "MAGNUM-EQ",
+    "price": 18.62,
+    "volume": 1812,
+    "ema9": 18.773245113958264,
+    "rvol": 0.06000178813275893,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 18.693387011811655,
+      "kalman_velocity": -0.03202833636435658,
+      "trend_strength": -0.3455264195351912,
+      "confidence": 0.3455264195351912,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:44.121Z"
+  },
+  {
+    "symbol": "CCCL-EQ",
+    "price": 13.45,
+    "volume": 390544,
+    "ema9": 13.571871265479823,
+    "rvol": 2.1235592824972636,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 13.34636607909276,
+      "kalman_velocity": -0.036709336711252434,
+      "trend_strength": -0.3960257421133655,
+      "confidence": 0.3960257421133655,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:44.820Z"
+  },
+  {
+    "symbol": "MOVALUE-EQ",
+    "price": 108.25,
+    "volume": 79490,
+    "ema9": 109.30581058312723,
+    "rvol": 1.2209826537210864,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 108.53185416968394,
+      "kalman_velocity": -0.23547997759323006,
+      "trend_strength": -2.5403927511066144,
+      "confidence": 2.5403927511066144,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:45.545Z"
+  },
+  {
+    "symbol": "SVLL-EQ",
+    "price": 786.75,
+    "volume": 723,
+    "ema9": 813.3471201777786,
+    "rvol": 0.10531912569102019,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 819.3905482181223,
+      "kalman_velocity": 0.0048653412280939,
+      "trend_strength": 0.052488019210110703,
+      "confidence": 0.052488019210110703,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:46.259Z"
+  },
+  {
+    "symbol": "KIRLPNU-EQ",
+    "price": 681.95,
+    "volume": 97672,
+    "ema9": 690.6743673132306,
+    "rvol": 0.7797329467346408,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 679.3971361353207,
+      "kalman_velocity": -3.1575754891800507,
+      "trend_strength": -34.064390381594535,
+      "confidence": 34.064390381594535,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:46.953Z"
+  },
+  {
+    "symbol": "BRIGADE-EQ",
+    "price": 569.55,
+    "volume": 310825,
+    "ema9": 590.6253622601112,
+    "rvol": 0.46665459587779556,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 16,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 573.120652324519,
+      "kalman_velocity": -5.734219440139714,
+      "trend_strength": -61.861605593274696,
+      "confidence": 61.861605593274696,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:47.709Z"
+  },
+  {
+    "symbol": "BANKIETF-EQ",
+    "price": 56.13,
+    "volume": 253905,
+    "ema9": 56.788775761274316,
+    "rvol": 0.36250669514122813,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 56.28146173325388,
+      "kalman_velocity": -0.15733003200948187,
+      "trend_strength": -1.6972996045492659,
+      "confidence": 1.6972996045492659,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:48.387Z"
+  },
+  {
+    "symbol": "AGRITECH-EQ",
+    "price": 89.96,
+    "volume": 4536,
+    "ema9": 94.04198425672381,
+    "rvol": 1.677483774338492,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 8,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 92.36878558411112,
+      "kalman_velocity": -0.5638533842518272,
+      "trend_strength": -6.082933524457136,
+      "confidence": 6.082933524457136,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:49.064Z"
+  },
+  {
+    "symbol": "DANGEE-EQ",
+    "price": 2.9,
+    "volume": 157889,
+    "ema9": 2.885252503727466,
+    "rvol": 0.3109480440320502,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 2,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 2.904272226777593,
+      "kalman_velocity": 0.00910796983600221,
+      "trend_strength": 0.0982581227718909,
+      "confidence": 0.0982581227718909,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:49.796Z"
+  },
+  {
+    "symbol": "IDFCFIRSTB-EQ",
+    "price": 80.39,
+    "volume": 24434109,
+    "ema9": 82.4732433050901,
+    "rvol": 1.0257343699951778,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 81.5490802367363,
+      "kalman_velocity": -0.39540932429087955,
+      "trend_strength": -4.265734146126374,
+      "confidence": 4.265734146126374,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:50.554Z"
+  },
+  {
+    "symbol": "WELSPUNLIV-EQ",
+    "price": 239.17,
+    "volume": 22516675,
+    "ema9": 225.47794073190653,
+    "rvol": 4.1629109581962425,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 11,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 232.1188958064731,
+      "kalman_velocity": 1.8194107786990794,
+      "trend_strength": 19.62807199462407,
+      "confidence": 19.62807199462407,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:51.268Z"
+  },
+  {
+    "symbol": "HDFCVALUE-EQ",
+    "price": 118.11,
+    "volume": 16898,
+    "ema9": 119.78389239238385,
+    "rvol": 1.5049540222207378,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 18,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 118.54126416911008,
+      "kalman_velocity": -0.3619304161752314,
+      "trend_strength": -3.904558744458585,
+      "confidence": 3.904558744458585,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:51.993Z"
+  },
+  {
+    "symbol": "AVG-EQ",
+    "price": 166,
+    "volume": 5213,
+    "ema9": 166.29504053977928,
+    "rvol": 0.43528360651631165,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 163.731129257294,
+      "kalman_velocity": -0.4625612688285184,
+      "trend_strength": -4.990179234280806,
+      "confidence": 4.990179234280806,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:52.721Z"
+  },
+  {
+    "symbol": "GMMPFAUDLR-EQ",
+    "price": 1443.4,
+    "volume": 328964,
+    "ema9": 1448.3098181443386,
+    "rvol": 0.5539360834302196,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 1524.0000556403725,
+      "kalman_velocity": 14.435428152221904,
+      "trend_strength": 155.7315293293079,
+      "confidence": 155.7315293293079,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:53.433Z"
+  },
+  {
+    "symbol": "ATALREAL-EQ",
+    "price": 12.78,
+    "volume": 2168896,
+    "ema9": 13.647611447386675,
+    "rvol": 0.258072462987969,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 23,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 10.646630484461728,
+      "kalman_velocity": -0.5470653826270073,
+      "trend_strength": -5.901822085305698,
+      "confidence": 5.901822085305698,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:54.104Z"
+  },
+  {
+    "symbol": "APOLLOTYRE-EQ",
+    "price": 404.75,
+    "volume": 708176,
+    "ema9": 404.2366098727851,
+    "rvol": 0.7656431869393842,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 3,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 397.50365183027986,
+      "kalman_velocity": -1.3185620381253371,
+      "trend_strength": -14.224841864577582,
+      "confidence": 14.224841864577582,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:54.783Z"
+  },
+  {
+    "symbol": "APOLLO-EQ",
+    "price": 394,
+    "volume": 4102186,
+    "ema9": 398.5781772440211,
+    "rvol": 0.5039852218870636,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 400.1760235455554,
+      "kalman_velocity": 0.4571494546421264,
+      "trend_strength": 4.931795784146482,
+      "confidence": 4.931795784146482,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:55.471Z"
+  },
+  {
+    "symbol": "GICHSGFIN-EQ",
+    "price": 132.88,
+    "volume": 77191,
+    "ema9": 135.57190584010434,
+    "rvol": 1.0256127488430615,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 134.63683894790975,
+      "kalman_velocity": -0.32689028114021645,
+      "trend_strength": -3.5265405963741845,
+      "confidence": 3.5265405963741845,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:56.196Z"
+  },
+  {
+    "symbol": "PVTBANIETF-EQ",
+    "price": 27.15,
+    "volume": 3754055,
+    "ema9": 27.219448094900244,
+    "rvol": 2.0456139619553526,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 11,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 27.034054486192378,
+      "kalman_velocity": -0.05908144446056398,
+      "trend_strength": -0.6373793422547014,
+      "confidence": 0.6373793422547014,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:56.879Z"
+  },
+  {
+    "symbol": "ITI-EQ",
+    "price": 241.54,
+    "volume": 157624,
+    "ema9": 248.8993303477447,
+    "rvol": 0.7984572264826577,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 18,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 243.45566426856817,
+      "kalman_velocity": -1.473826663705076,
+      "trend_strength": -15.899859559743998,
+      "confidence": 15.899859559743998,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:57.583Z"
+  },
+  {
+    "symbol": "UBL-EQ",
+    "price": 1188.8,
+    "volume": 143713,
+    "ema9": 1213.7858200860967,
+    "rvol": 0.8548595290072749,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 1194.38750600153,
+      "kalman_velocity": -5.20651216948423,
+      "trend_strength": -56.16862167684515,
+      "confidence": 56.16862167684515,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:58.251Z"
+  },
+  {
+    "symbol": "SILVERAG-EQ",
+    "price": 212.81,
+    "volume": 138990,
+    "ema9": 217.46700659808653,
+    "rvol": 0.5067538929429078,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 8,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 215.09907660148764,
+      "kalman_velocity": -0.8524773390138485,
+      "trend_strength": -9.196651344405842,
+      "confidence": 9.196651344405842,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:58.954Z"
+  },
+  {
+    "symbol": "ARCHIDPLY-EQ",
+    "price": 101.79,
+    "volume": 27789,
+    "ema9": 103.72003865526558,
+    "rvol": 1.5209805998210224,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 103.83010727031166,
+      "kalman_velocity": -0.0868619838097075,
+      "trend_strength": -0.9370799006873399,
+      "confidence": 0.9370799006873399,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:12:59.667Z"
+  },
+  {
+    "symbol": "ZOTA-EQ",
+    "price": 1267.8,
+    "volume": 225359,
+    "ema9": 1282.7246434377212,
+    "rvol": 1.7249768742922118,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 1338.366695192553,
+      "kalman_velocity": 13.439402588282155,
+      "trend_strength": 144.9862585491303,
+      "confidence": 144.9862585491303,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:00.333Z"
+  },
+  {
+    "symbol": "RKFORGE-EQ",
+    "price": 695.45,
+    "volume": 862927,
+    "ema9": 705.8688756145979,
+    "rvol": 1.4372356638812527,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 2,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 701.4602376614766,
+      "kalman_velocity": -1.0304654678488323,
+      "trend_strength": -11.116813546291588,
+      "confidence": 11.116813546291588,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:01.048Z"
+  },
+  {
+    "symbol": "SICAGEN-EQ",
+    "price": 50.96,
+    "volume": 16580,
+    "ema9": 52.11718989351347,
+    "rvol": 0.9824835857688023,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 51.09512353040607,
+      "kalman_velocity": -0.26123671117862096,
+      "trend_strength": -2.8182601942803487,
+      "confidence": 2.8182601942803487,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:01.795Z"
+  },
+  {
+    "symbol": "THYROCARE-EQ",
+    "price": 533.6,
+    "volume": 223853,
+    "ema9": 550.3933675547146,
+    "rvol": 0.9724779609732469,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 544.3279413288542,
+      "kalman_velocity": -1.9386448527149187,
+      "trend_strength": -20.91438678202388,
+      "confidence": 20.91438678202388,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:02.504Z"
+  },
+  {
+    "symbol": "PILANIINVS-EQ",
+    "price": 3892.3,
+    "volume": 2414,
+    "ema9": 3999.6571575909156,
+    "rvol": 0.870741428751781,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 23,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 3925.7801435344713,
+      "kalman_velocity": -18.27636774064741,
+      "trend_strength": -197.16815246645527,
+      "confidence": 197.16815246645527,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:03.275Z"
+  },
+  {
+    "symbol": "KRIDHANINF-EQ",
+    "price": 1.85,
+    "volume": 104582,
+    "ema9": 1.872489511077001,
+    "rvol": 1.8047684459753295,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 1.836931365153489,
+      "kalman_velocity": -0.005962475550398887,
+      "trend_strength": -0.06432406619746181,
+      "confidence": 0.06432406619746181,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:03.963Z"
+  },
+  {
+    "symbol": "HDFCLOWVOL-EQ",
+    "price": 19.15,
+    "volume": 4017,
+    "ema9": 19.62615194276665,
+    "rvol": 0.21072013093289688,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 36,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 19.420396873554065,
+      "kalman_velocity": -0.05946416115033172,
+      "trend_strength": -0.6415081463863755,
+      "confidence": 0.6415081463863755,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:04.650Z"
+  },
+  {
+    "symbol": "GUFICBIO-EQ",
+    "price": 418.4,
+    "volume": 218739,
+    "ema9": 427.70733108085165,
+    "rvol": 2.167539671686693,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 427.6884863108929,
+      "kalman_velocity": -0.3395147862710001,
+      "trend_strength": -3.662735620886847,
+      "confidence": 3.662735620886847,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:05.359Z"
+  },
+  {
+    "symbol": "GNFC-EQ",
+    "price": 589.15,
+    "volume": 629192,
+    "ema9": 603.3761501465784,
+    "rvol": 0.4779737665639729,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 2,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 611.3973128814683,
+      "kalman_velocity": 2.0242106797805004,
+      "trend_strength": 21.83748355246495,
+      "confidence": 21.83748355246495,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:06.072Z"
+  },
+  {
+    "symbol": "SENCO-EQ",
+    "price": 317.4,
+    "volume": 538846,
+    "ema9": 328.6389696275935,
+    "rvol": 0.6775270036782376,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 9,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 322.27987321925434,
+      "kalman_velocity": -2.033964434549159,
+      "trend_strength": -21.942708498397185,
+      "confidence": 21.942708498397185,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:06.998Z"
+  },
+  {
+    "symbol": "WELCORP-EQ",
+    "price": 2605.8,
+    "volume": 2309126,
+    "ema9": 2704.4199584456787,
+    "rvol": 1.0308981809657962,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 2,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 2766.9752139250345,
+      "kalman_velocity": 9.71695153842321,
+      "trend_strength": 104.8279072529276,
+      "confidence": 104.8279072529276,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:07.677Z"
+  },
+  {
+    "symbol": "VHL-EQ",
+    "price": 3435.3,
+    "volume": 1027,
+    "ema9": 3382.6773183523073,
+    "rvol": 1.5647139483507275,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 2,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 3347.2017004944673,
+      "kalman_velocity": -6.758050417321888,
+      "trend_strength": -72.90684527511664,
+      "confidence": 72.90684527511664,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:08.355Z"
+  },
+  {
+    "symbol": "DCXINDIA-EQ",
+    "price": 158.99,
+    "volume": 314149,
+    "ema9": 161.32517967267435,
+    "rvol": 0.7914581204201758,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 16,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 158.76761072177504,
+      "kalman_velocity": -0.6093637552081577,
+      "trend_strength": -6.573906122889041,
+      "confidence": 6.573906122889041,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:09.148Z"
+  },
+  {
+    "symbol": "MHRIL-EQ",
+    "price": 194.85,
+    "volume": 153366,
+    "ema9": 196.83357870844713,
+    "rvol": 1.2056250869633918,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 194.35660939116036,
+      "kalman_velocity": -0.4713419943803163,
+      "trend_strength": -5.084906997419023,
+      "confidence": 5.084906997419023,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:09.823Z"
+  },
+  {
+    "symbol": "VINATIORGA-EQ",
+    "price": 1208.1,
+    "volume": 60315,
+    "ema9": 1204.7483729388189,
+    "rvol": 0.9342291235067475,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 1174.625402050663,
+      "kalman_velocity": -7.680005511628805,
+      "trend_strength": -82.8530328973565,
+      "confidence": 82.8530328973565,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:10.521Z"
+  },
+  {
+    "symbol": "KANSAINER-EQ",
+    "price": 175.27,
+    "volume": 242728,
+    "ema9": 179.93943192678003,
+    "rvol": 0.7382880627694501,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 28,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 176.1675719827618,
+      "kalman_velocity": -0.9047963265572952,
+      "trend_strength": -9.76107630341531,
+      "confidence": 9.76107630341531,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:11.277Z"
+  },
+  {
+    "symbol": "MSPL-EQ",
+    "price": 32.52,
+    "volume": 1038333,
+    "ema9": 33.46490040141573,
+    "rvol": 1.2186604397988494,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 5,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 33.18975336919096,
+      "kalman_velocity": -0.09869682098874151,
+      "trend_strength": -1.0647558707949973,
+      "confidence": 1.0647558707949973,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:12.017Z"
+  },
+  {
+    "symbol": "FCSSOFT-EQ",
+    "price": 1.38,
+    "volume": 1584700,
+    "ema9": 1.395244944875055,
+    "rvol": 0.9029749769035389,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 1.3822331772431542,
+      "kalman_velocity": -0.0026187301919037864,
+      "trend_strength": -0.02825124779019714,
+      "confidence": 0.02825124779019714,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:12.692Z"
+  },
+  {
+    "symbol": "CONTROLPR-EQ",
+    "price": 618,
+    "volume": 55775,
+    "ema9": 601.8519101201584,
+    "rvol": 1.7712337663368727,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 5,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 604.2430825825676,
+      "kalman_velocity": 1.262254044663666,
+      "trend_strength": 13.617382921013032,
+      "confidence": 13.617382921013032,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:13.618Z"
+  },
+  {
+    "symbol": "ASALCBR-EQ",
+    "price": 611.1,
+    "volume": 48945,
+    "ema9": 637.1639842104399,
+    "rvol": 1.3962125826010432,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 25,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 621.3968241910129,
+      "kalman_velocity": -4.475062478182419,
+      "trend_strength": -48.277634457574614,
+      "confidence": 48.277634457574614,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:14.334Z"
+  },
+  {
+    "symbol": "AURIONPRO-EQ",
+    "price": 607.8,
+    "volume": 181004,
+    "ema9": 647.8381564198652,
+    "rvol": 1.3263820724005408,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 637.3739429473064,
+      "kalman_velocity": -4.596452180330063,
+      "trend_strength": -49.587204479394295,
+      "confidence": 49.587204479394295,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:15.022Z"
+  },
+  {
+    "symbol": "PSUBANKADD-EQ",
+    "price": 80.47,
+    "volume": 32325,
+    "ema9": 82.28811384516196,
+    "rvol": 1.421775933390952,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 81.40582184137897,
+      "kalman_velocity": -0.2687495453473375,
+      "trend_strength": -2.8993097580590343,
+      "confidence": 2.8993097580590343,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:15.704Z"
+  },
+  {
+    "symbol": "KAYNES-EQ",
+    "price": 3399,
+    "volume": 964281,
+    "ema9": 3514.1114444016634,
+    "rvol": 0.8835791644757343,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 3,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 3483.4895986150736,
+      "kalman_velocity": -5.674256856073139,
+      "trend_strength": -61.21472038690916,
+      "confidence": 61.21472038690916,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:16.416Z"
+  },
+  {
+    "symbol": "HDFCNIFIT-EQ",
+    "price": 29.87,
+    "volume": 244781,
+    "ema9": 30.125951719975106,
+    "rvol": 1.20357333651951,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 19,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 29.550493419249605,
+      "kalman_velocity": -0.14291207523989896,
+      "trend_strength": -1.5417565590743458,
+      "confidence": 1.5417565590743458,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:17.101Z"
+  },
+  {
+    "symbol": "NIITMTS-EQ",
+    "price": 191.08,
+    "volume": 870142,
+    "ema9": 207.8492310142141,
+    "rvol": 3.652360424947847,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 12,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 202.82981271232478,
+      "kalman_velocity": -1.824507644920658,
+      "trend_strength": -19.683057739633036,
+      "confidence": 19.683057739633036,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:17.840Z"
+  },
+  {
+    "symbol": "DELTAMAGNT-EQ",
+    "price": 54.08,
+    "volume": 7561,
+    "ema9": 55.87534672335042,
+    "rvol": 2.2833932292453114,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 55.549454323160695,
+      "kalman_velocity": -0.05378941231261467,
+      "trend_strength": -0.5802881184288838,
+      "confidence": 0.5802881184288838,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:18.513Z"
+  },
+  {
+    "symbol": "ATL-EQ",
+    "price": 23.59,
+    "volume": 146141,
+    "ema9": 24.550791285691933,
+    "rvol": 0.7147192322909642,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 24.430147410346915,
+      "kalman_velocity": -0.04766557327963862,
+      "trend_strength": -0.5142232391668801,
+      "confidence": 0.5142232391668801,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:19.225Z"
+  },
+  {
+    "symbol": "TRF-EQ",
+    "price": 192.33,
+    "volume": 7150,
+    "ema9": 206.34091060122933,
+    "rvol": 0.4926413846323448,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 16,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 201.097228356733,
+      "kalman_velocity": -1.8221993824832423,
+      "trend_strength": -19.658155863798005,
+      "confidence": 19.658155863798005,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:19.953Z"
+  },
+  {
+    "symbol": "UNITEDTEA-EQ",
+    "price": 416.95,
+    "volume": 10435,
+    "ema9": 425.34140941251087,
+    "rvol": 3.2731093754901037,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 420.5166387542485,
+      "kalman_velocity": -1.1344551057499601,
+      "trend_strength": -12.238669107066968,
+      "confidence": 12.238669107066968,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:20.643Z"
+  },
+  {
+    "symbol": "GREAVESCOT-EQ",
+    "price": 225.98,
+    "volume": 1763832,
+    "ema9": 221.14932847381127,
+    "rvol": 0.7084810446800899,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 11,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 229.5600463163463,
+      "kalman_velocity": 2.8714678945376813,
+      "trend_strength": 30.9778194259885,
+      "confidence": 30.9778194259885,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:21.352Z"
+  },
+  {
+    "symbol": "JUBLFOOD-EQ",
+    "price": 443.4,
+    "volume": 1560787,
+    "ema9": 467.987984336014,
+    "rvol": 1.4828184063873067,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 463.6297416803156,
+      "kalman_velocity": -1.9061737087580322,
+      "trend_strength": -20.56408328882962,
+      "confidence": 20.56408328882962,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:22.015Z"
+  },
+  {
+    "symbol": "VPRPL-EQ",
+    "price": 28.39,
+    "volume": 507617,
+    "ema9": 30.98753075713991,
+    "rvol": 0.6184212329695439,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 9,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 30.026077970430496,
+      "kalman_velocity": -0.38858375674450274,
+      "trend_strength": -4.192098916098636,
+      "confidence": 4.192098916098636,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:22.738Z"
+  },
+  {
+    "symbol": "PERSISTENT-EQ",
+    "price": 5367,
+    "volume": 506268,
+    "ema9": 5330.247923483893,
+    "rvol": 1.190905545317726,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 5254.867483715177,
+      "kalman_velocity": -18.0850484113916,
+      "trend_strength": -195.10417130697172,
+      "confidence": 195.10417130697172,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:23.430Z"
+  },
+  {
+    "symbol": "SAMHI-EQ",
+    "price": 154.37,
+    "volume": 1073954,
+    "ema9": 155.01842912599278,
+    "rvol": 0.5874463679244484,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 4,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 154.68975949901235,
+      "kalman_velocity": -0.23993747319484465,
+      "trend_strength": -2.588480871507204,
+      "confidence": 2.588480871507204,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:24.295Z"
+  },
+  {
+    "symbol": "NUVAMA-EQ",
+    "price": 1701.4,
+    "volume": 856086,
+    "ema9": 1680.8857137461812,
+    "rvol": 2.874434740097963,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 1655.0202118555799,
+      "kalman_velocity": -6.319805953207224,
+      "trend_strength": -68.17899931883477,
+      "confidence": 68.17899931883477,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:24.971Z"
+  },
+  {
+    "symbol": "KALAMANDIR-EQ",
+    "price": 74.37,
+    "volume": 488731,
+    "ema9": 77.25577689710006,
+    "rvol": 1.0371488809497789,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 75.31535196495393,
+      "kalman_velocity": -0.5062106780422738,
+      "trend_strength": -5.46107550278758,
+      "confidence": 5.46107550278758,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:25.710Z"
+  },
+  {
+    "symbol": "TARAPUR-EQ",
+    "price": 12.2,
+    "volume": 10649,
+    "ema9": 12.208960029931447,
+    "rvol": 0.387565441929784,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 26,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 11.880825501450886,
+      "kalman_velocity": -0.059101390364926204,
+      "trend_strength": -0.6375945216146365,
+      "confidence": 0.6375945216146365,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:26.418Z"
+  },
+  {
+    "symbol": "ITDC-EQ",
+    "price": 665.6,
+    "volume": 162183,
+    "ema9": 672.348272694541,
+    "rvol": 0.15526771002123094,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 677.1976569383509,
+      "kalman_velocity": 1.1675752326440554,
+      "trend_strength": 12.595973923966653,
+      "confidence": 12.595973923966653,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:27.122Z"
+  },
+  {
+    "symbol": "SARVESHWAR-EQ",
+    "price": 3.44,
+    "volume": 1535950,
+    "ema9": 3.5449337724404013,
+    "rvol": 0.4942179365153499,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 11,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 3.5245141388245447,
+      "kalman_velocity": -0.01806773072115058,
+      "trend_strength": -0.1949173455088557,
+      "confidence": 0.1949173455088557,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:27.999Z"
+  },
+  {
+    "symbol": "ABB-EQ",
+    "price": 6900,
+    "volume": 240835,
+    "ema9": 6962.340449577425,
+    "rvol": 1.3221047615753818,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 8,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 6842.57075695804,
+      "kalman_velocity": -34.8351675593119,
+      "trend_strength": -375.8069287068101,
+      "confidence": 375.8069287068101,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:28.723Z"
+  },
+  {
+    "symbol": "IIFLCAPS-EQ",
+    "price": 345.6,
+    "volume": 654711,
+    "ema9": 345.0463545967921,
+    "rvol": 1.0513361194530286,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 3,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 347.21125435817993,
+      "kalman_velocity": 0.5020705701348779,
+      "trend_strength": 5.416411407673235,
+      "confidence": 5.416411407673235,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:29.430Z"
+  },
+  {
+    "symbol": "PRAKASHSTL-EQ",
+    "price": 3.56,
+    "volume": 120526,
+    "ema9": 3.6285667719301413,
+    "rvol": 0.9469827623460306,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 10,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 3.5833151435168307,
+      "kalman_velocity": -0.012618041244952798,
+      "trend_strength": -0.1361252911583593,
+      "confidence": 0.1361252911583593,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:30.146Z"
+  },
+  {
+    "symbol": "HARRMALAYA-EQ",
+    "price": 179.67,
+    "volume": 8615,
+    "ema9": 177.27582340129257,
+    "rvol": 0.9460171743570597,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 2,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 173.36191428349028,
+      "kalman_velocity": -0.6851036093332206,
+      "trend_strength": -7.390998847101675,
+      "confidence": 7.390998847101675,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:30.870Z"
+  },
+  {
+    "symbol": "BLUEJET-EQ",
+    "price": 541.8,
+    "volume": 522842,
+    "ema9": 557.5696210413844,
+    "rvol": 1.1827239804377605,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 552.546152700598,
+      "kalman_velocity": -2.107501006170879,
+      "trend_strength": -22.736031885796812,
+      "confidence": 22.736031885796812,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:31.609Z"
+  },
+  {
+    "symbol": "JITFINFRA-EQ",
+    "price": 275.45,
+    "volume": 33140,
+    "ema9": 280.4926523372624,
+    "rvol": 1.6994392465853527,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 3,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 274.16045643132173,
+      "kalman_velocity": -1.3375611343199847,
+      "trend_strength": -14.429806918268191,
+      "confidence": 14.429806918268191,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:32.378Z"
+  },
+  {
+    "symbol": "VAKRANGEE-EQ",
+    "price": 5.12,
+    "volume": 839936,
+    "ema9": 5.219015775822174,
+    "rvol": 0.7399503561194328,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 5.100572952413074,
+      "kalman_velocity": -0.026374767132568176,
+      "trend_strength": -0.2845348802922065,
+      "confidence": 0.2845348802922065,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:33.204Z"
+  },
+  {
+    "symbol": "SDBL-EQ",
+    "price": 74.94,
+    "volume": 938787,
+    "ema9": 74.37257649094026,
+    "rvol": 0.34426084508186794,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 5,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 75.15823544681723,
+      "kalman_velocity": 0.503474068178243,
+      "trend_strength": 5.431552551697446,
+      "confidence": 5.431552551697446,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:33.965Z"
+  },
+  {
+    "symbol": "ADFFOODS-EQ",
+    "price": 281.4,
+    "volume": 266181,
+    "ema9": 271.52842753699616,
+    "rvol": 2.5296533215236403,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 3,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 271.982224720546,
+      "kalman_velocity": 0.4501267310459203,
+      "trend_strength": 4.856033605556313,
+      "confidence": 4.856033605556313,
+      "trend_changed": true
+    },
+    "timestamp": "2026-10-03T12:13:34.662Z"
+  },
+  {
+    "symbol": "PIONEEREMB-EQ",
+    "price": 20.07,
+    "volume": 23487,
+    "ema9": 21.012017320079188,
+    "rvol": 1.817998862154244,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "SIDEWAYS",
+      "kalman_price": 20.92246422545113,
+      "kalman_velocity": -0.056210551057319355,
+      "trend_strength": -0.6064077205255675,
+      "confidence": 0.6064077205255675,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:35.367Z"
+  },
+  {
+    "symbol": "GRINDWELL-EQ",
+    "price": 1975.8,
+    "volume": 27469,
+    "ema9": 1952.7909767793628,
+    "rvol": 0.9923664122137404,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 2,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 1951.838540008698,
+      "kalman_velocity": 3.278321995818228,
+      "trend_strength": 35.367021515333406,
+      "confidence": 35.367021515333406,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:36.026Z"
+  },
+  {
+    "symbol": "ACE-EQ",
+    "price": 1212.3,
+    "volume": 465866,
+    "ema9": 1215.0768922609645,
+    "rvol": 1.2540620686239252,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 1,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 1237.8332604772172,
+      "kalman_velocity": 5.063860618971678,
+      "trend_strength": 54.62967569697843,
+      "confidence": 54.62967569697843,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:36.743Z"
+  },
+  {
+    "symbol": "HGM-EQ",
+    "price": 40.36,
+    "volume": 6341,
+    "ema9": 42.91578666152944,
+    "rvol": 0.6200011733187321,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 9,
+    "isSupertrendBullish": false,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 41.43769992850493,
+      "kalman_velocity": -0.502492491237066,
+      "trend_strength": -5.420963154792003,
+      "confidence": 5.420963154792003,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:37.442Z"
+  },
+  {
+    "symbol": "JHS-EQ",
+    "price": 11.7,
+    "volume": 4065094,
+    "ema9": 9.998323329828322,
+    "rvol": 7.449795222418436,
+    "isAboveEma9": true,
+    "daysSinceCrossover": 5,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 10.418789957614479,
+      "kalman_velocity": 0.2113456691544065,
+      "trend_strength": 2.280028269856039,
+      "confidence": 2.280028269856039,
+      "trend_changed": true
+    },
+    "timestamp": "2026-10-03T12:13:38.152Z"
+  },
+  {
+    "symbol": "DCBBANK-EQ",
+    "price": 199.71,
+    "volume": 842489,
+    "ema9": 209.06631604445317,
+    "rvol": 0.5816815289676178,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 6,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BEARISH",
+      "kalman_price": 206.5282018256811,
+      "kalman_velocity": -1.4525143153516926,
+      "trend_strength": -15.669938800368358,
+      "confidence": 15.669938800368358,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:38.877Z"
+  },
+  {
+    "symbol": "CPCAP-EQ",
+    "price": 140.85,
+    "volume": 14506,
+    "ema9": 146.26303169160562,
+    "rvol": 0.25538440141089935,
+    "isAboveEma9": false,
+    "daysSinceCrossover": 2,
+    "isSupertrendBullish": true,
+    "kalman": {
+      "trend": "BULLISH",
+      "kalman_price": 151.6196352909261,
+      "kalman_velocity": 0.794242723496164,
+      "trend_strength": 8.568407717764442,
+      "confidence": 8.568407717764442,
+      "trend_changed": false
+    },
+    "timestamp": "2026-10-03T12:13:39.539Z"
+  }
+]
