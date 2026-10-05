@@ -1,7 +1,5 @@
 import { SMA, EMA, ATR } from 'technicalindicators';
-import fs from 'fs';
-import path from 'path';
-import { getSmartAPI, getHistoricalData } from './smartapi';
+import { getHistoricalData } from './smartapi';
 import { detectKalmanTrend } from './kalman';
 
 export const STOCKS = [
@@ -1007,17 +1005,7 @@ export const STOCKS = [
     }
 ];
 
-export async function runScan() {
-    let smart_api;
-    try {
-        const auth = await getSmartAPI();
-        smart_api = auth.smart_api;
-    } catch (err) {
-        throw new Error("Failed to authenticate with Angel One SmartAPI.");
-    }
-
-    const results = [];
-
+export async function scanStock(stock: typeof STOCKS[number], smart_api: Parameters<typeof getHistoricalData>[0]) {
     // Hurst Supertrend Smooth Trend settings
     const h_period = 80;
     const h_lag = 15;
@@ -1033,20 +1021,20 @@ export async function runScan() {
         return sqDiffs.reduce((a, b) => a + b, 0) / arr.length;
     }
 
-    for (const stock of STOCKS) {
+    {
         console.log(`Fetching data for ${stock.symbol}...`);
         const candles = await getHistoricalData(smart_api, stock.token);
         
         if (!candles || candles.length < 50) {
             console.log(`Not enough data for ${stock.symbol}`);
-            continue;
+            return null;
         }
 
         // candles format: [timestamp, open, high, low, close, volume]
-        const highs = candles.map((c: any) => parseFloat(c[2]));
-        const lows = candles.map((c: any) => parseFloat(c[3]));
-        const closes = candles.map((c: any) => parseFloat(c[4]));
-        const volumes = candles.map((c: any) => parseFloat(c[5]));
+        const highs = candles.map((c: (string | number)[]) => Number(c[2]));
+        const lows = candles.map((c: (string | number)[]) => Number(c[3]));
+        const closes = candles.map((c: (string | number)[]) => Number(c[4]));
+        const volumes = candles.map((c: (string | number)[]) => Number(c[5]));
 
         const ema9 = EMA.calculate({ period: 9, values: closes });
         const smaVol20 = SMA.calculate({ period: 20, values: volumes });
@@ -1147,7 +1135,7 @@ export async function runScan() {
         // Kalman Filter Trend Detection
         const kalmanResult = detectKalmanTrend(candles);
 
-        results.push({
+        return {
             symbol: stock.symbol,
             price: latestClose,
             volume: latestVolume,
@@ -1158,19 +1146,7 @@ export async function runScan() {
             isSupertrendBullish,
             kalman: kalmanResult,
             timestamp: new Date().toISOString()
-        });
+        };
         
-        // Add a small delay to avoid rate limits
-        await new Promise(res => setTimeout(res, 500));
     }
-
-    // Save to filesystem (overwrite old data)
-    const dataDir = path.join(process.cwd(), 'data');
-    if (!fs.existsSync(dataDir)) {
-        fs.mkdirSync(dataDir);
-    }
-    const filePath = path.join(dataDir, 'screener-results.json');
-    fs.writeFileSync(filePath, JSON.stringify(results, null, 2), 'utf-8');
-
-    return results;
 }

@@ -1,5 +1,6 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import type { ScanJob } from '@/lib/scan-job';
 
 interface Result {
   symbol: string;
@@ -24,6 +25,11 @@ interface Result {
 export default function Home() {
   const [data, setData] = useState<Result[]>([]);
   const [loading, setLoading] = useState(false);
+  const [job, setJob] = useState<ScanJob | null>(null);
+  const [scanError, setScanError] = useState('');
+  const [elapsed, setElapsed] = useState(0);
+  const scanning = useRef(false);
+  const controller = useRef<AbortController | null>(null);
   const [fetching, setFetching] = useState(true);
   const [theme, setTheme] = useState<'light' | 'dark'>('dark');
 
@@ -39,14 +45,27 @@ export default function Home() {
   useEffect(() => {
     const saved = localStorage.getItem('theme') as 'light' | 'dark' | null;
     const initial = saved || 'dark';
+    // Restore the browser preference after hydration.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setTheme(initial);
     document.documentElement.setAttribute('data-theme', initial);
-    fetchResults();
+    const initialController = new AbortController();
+    void (async () => {
+      try {
+        const res = await fetch('/api/results', { cache: 'no-store', signal: initialController.signal });
+        const json = await res.json();
+        if (!res.ok || !json.success) throw new Error(json.error || 'Unable to load results.');
+        if (initialController.signal.aborted) return;
+        setData(json.data);
+        setJob(json.job || null);
+      } catch (error) {
+        if (!initialController.signal.aborted) setScanError(error instanceof Error ? error.message : 'Unable to load results.');
+      } finally {
+        if (!initialController.signal.aborted) setFetching(false);
+      }
+    })();
+    return () => { initialController.abort(); controller.current?.abort(); };
   }, []);
-
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [filterEma, filterRvol, filterSupertrend, filterKalman, searchQuery]);
 
   const toggleTheme = () => {
     const next = theme === 'dark' ? 'light' : 'dark';
@@ -55,33 +74,60 @@ export default function Home() {
     localStorage.setItem('theme', next);
   };
 
-  const fetchResults = async () => {
-    setFetching(true);
-    try {
-      const res = await fetch('/api/results');
-      const json = await res.json();
-      if (json.success && json.data) setData(json.data);
-    } catch (err) {
-      console.error(err);
-    }
-    setFetching(false);
-  };
+  useEffect(() => {
+    if (!loading) return;
+    const started = Date.now();
+    const timer = setInterval(() => setElapsed(Math.floor((Date.now() - started) / 1000)), 1000);
+    return () => clearInterval(timer);
+  }, [loading]);
 
   const handleScan = async () => {
+    if (scanning.current) return;
+    scanning.current = true;
+    controller.current = new AbortController();
+    const signal = controller.current.signal;
     setLoading(true);
-    try {
-      const res = await fetch('/api/scan', { method: 'POST' });
-      const json = await res.json();
-      if (json.success && json.data) {
-        setData(json.data);
-      } else {
-        alert('Scan failed. Ensure .env.local has valid Angel One API credentials.');
+    setScanError('');
+    setElapsed(0);
+    setCurrentPage(1);
+    const applyJob = (next: ScanJob) => { setJob(next); setData(next.data); };
+    const requestChunk = async (body: object): Promise<ScanJob> => {
+      // Retry the same cursor so a lost response cannot duplicate work.
+      for (let attempt = 0; ; attempt++) {
+        try {
+          const res = await fetch('/api/scan', {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body), cache: 'no-store',
+            signal: AbortSignal.any([signal, AbortSignal.timeout(30000)]),
+          });
+          const json = await res.json();
+          if (!res.ok || !json.success) throw new Error(json.error || 'The server could not continue this scan.');
+          return json.job;
+        } catch (error) {
+          if (signal.aborted || attempt >= 2) throw error;
+          setScanError('Connection interrupted. Reconnecting to saved progress...');
+          await new Promise(resolve => setTimeout(resolve, 1500 * (attempt + 1)));
+        }
       }
-    } catch (err) {
-      console.error(err);
-      alert('Error running scan.');
+    };
+    try {
+      let current = await requestChunk({ action: 'start' });
+      applyJob(current);
+      do {
+        if (signal.aborted) return;
+        current = await requestChunk({ action: 'advance', id: current.id, cursor: current.processed });
+        if (signal.aborted) return;
+        applyJob(current);
+        setScanError('');
+        if (current.status === 'paused') throw new Error(current.error || 'Scan paused. Resume to retry.');
+        if (current.status !== 'completed') await new Promise(resolve => setTimeout(resolve, 100));
+      } while (current.status !== 'completed');
+    } catch (error) {
+      if (!signal.aborted) setScanError(error instanceof Error ? error.message : 'Scan interrupted. Resume to continue.');
+    } finally {
+      scanning.current = false;
+      if (!signal.aborted) setLoading(false);
     }
-    setLoading(false);
   };
 
   const getRvolClass = (rvol: number) => {
@@ -114,7 +160,6 @@ export default function Home() {
 
   const bullishCount = data.filter(d => d.isSupertrendBullish).length;
   const bearishCount = data.length - bullishCount;
-  const extremeVolCount = data.filter(d => d.rvol >= 3.0).length;
   const kalmanBullish = data.filter(d => d.kalman?.trend === 'BULLISH').length;
 
   const getPageNumbers = () => {
@@ -144,7 +189,7 @@ export default function Home() {
             </svg>
           </div>
           <div>
-            <h1 className="title">IntraGain</h1>
+            <h1 className="title">Valgo</h1>
             <p className="subtitle">Algorithmic trend & volume analysis</p>
           </div>
         </div>
@@ -160,15 +205,33 @@ export default function Home() {
               </svg>
             )}
           </button>
-          <button className="btn" onClick={handleScan} disabled={loading}>
+          <button className="btn" onClick={handleScan} disabled={loading || fetching}>
             {loading ? (
               <><div className="loader"></div> Scanning...</>
             ) : (
-              <><svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /></svg> Run Scan</>
+              <><svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /></svg> {job && job.status !== 'completed' ? 'Resume Scan' : 'Run Scan'}</>
             )}
           </button>
         </div>
       </div>
+
+      {(loading || job || scanError) && (
+        <section className="scan-progress" aria-label="Scan progress" aria-busy={loading}>
+          <div className="scan-progress-heading">
+            <strong>{loading ? 'Scanning market data' : job?.status === 'completed' ? 'Scan complete' : 'Scan paused'}</strong>
+            <span>{job ? Math.floor(job.processed / job.total * 100) : 0}%</span>
+          </div>
+          <div className={`scan-progress-track ${loading ? 'is-running' : ''}`} role="progressbar"
+            aria-label="Stocks processed" aria-valuemin={0} aria-valuemax={job?.total || 100} aria-valuenow={job?.processed || 0}>
+            <div className="scan-progress-fill" style={{ width: `${job ? job.processed / job.total * 100 : 0}%` }} />
+          </div>
+          <p role="status">{job ? `${job.processed} / ${job.total} stocks processed - ${job.data.length} updated - ${job.skipped} skipped (insufficient history)` : 'Connecting to server...'}</p>
+          {loading && <p>{elapsed}s elapsed this session - {job?.lastSymbol ? `Last saved: ${job.lastSymbol.replace('-EQ', '')}` : 'Preparing scan'} - Results update as each chunk finishes.</p>}
+          {!loading && job && job.status !== 'completed' && <p>Completed chunks are saved. Click Resume Scan to continue. Keep this tab open while scanning.</p>}
+          {job?.status === 'completed' && <p>Updated {new Date(job.updatedAt).toLocaleString()}.</p>}
+          {scanError && <p className="scan-error" role="alert">{scanError}</p>}
+        </section>
+      )}
 
       {/* Summary Cards */}
       {!fetching && data.length > 0 && (
@@ -203,12 +266,12 @@ export default function Home() {
               className="filter-input"
               placeholder="Symbol…"
               value={searchQuery}
-              onChange={e => setSearchQuery(e.target.value)}
+              onChange={e => { setSearchQuery(e.target.value); setCurrentPage(1); }}
             />
           </div>
           <div className="filter-group">
             <label>EMA 9</label>
-            <select className="filter-select" value={filterEma} onChange={e => setFilterEma(e.target.value)}>
+            <select className="filter-select" value={filterEma} onChange={e => { setFilterEma(e.target.value); setCurrentPage(1); }}>
               <option value="all">All</option>
               <option value="above">Above</option>
               <option value="below">Below</option>
@@ -216,7 +279,7 @@ export default function Home() {
           </div>
           <div className="filter-group">
             <label>RVOL</label>
-            <select className="filter-select" value={filterRvol} onChange={e => setFilterRvol(e.target.value)}>
+            <select className="filter-select" value={filterRvol} onChange={e => { setFilterRvol(e.target.value); setCurrentPage(1); }}>
               <option value="all">All</option>
               <option value="extreme">Extreme ≥3</option>
               <option value="verystrong">Strong ≥2</option>
@@ -226,7 +289,7 @@ export default function Home() {
           </div>
           <div className="filter-group">
             <label>Hurst</label>
-            <select className="filter-select" value={filterSupertrend} onChange={e => setFilterSupertrend(e.target.value)}>
+            <select className="filter-select" value={filterSupertrend} onChange={e => { setFilterSupertrend(e.target.value); setCurrentPage(1); }}>
               <option value="all">All</option>
               <option value="bullish">Bullish</option>
               <option value="bearish">Bearish</option>
@@ -234,7 +297,7 @@ export default function Home() {
           </div>
           <div className="filter-group">
             <label>Kalman</label>
-            <select className="filter-select" value={filterKalman} onChange={e => setFilterKalman(e.target.value)}>
+            <select className="filter-select" value={filterKalman} onChange={e => { setFilterKalman(e.target.value); setCurrentPage(1); }}>
               <option value="all">All</option>
               <option value="bullish">Bullish</option>
               <option value="bearish">Bearish</option>
@@ -263,6 +326,7 @@ export default function Home() {
                     <th>Hurst</th>
                     <th>Kalman</th>
                     <th>RVOL</th>
+                    <th>Date</th>
                     <th>Updated</th>
                   </tr>
                 </thead>
@@ -294,7 +358,10 @@ export default function Home() {
                       </td>
                       <td className={getRvolClass(row.rvol)}>{row.rvol?.toFixed(2)}x</td>
                       <td style={{ color: 'var(--text-tertiary)', fontSize: '0.8rem' }}>
-                        {new Date(row.timestamp).toLocaleTimeString()}
+                        {new Date(row.timestamp).toLocaleDateString('en-IN', { timeZone: 'Asia/Kolkata', day: '2-digit', month: 'short', year: 'numeric' })}
+                      </td>
+                      <td style={{ color: 'var(--text-tertiary)', fontSize: '0.8rem' }}>
+                        {new Date(row.timestamp).toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata' })}
                       </td>
                     </tr>
                   ))}

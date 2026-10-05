@@ -572,3 +572,19 @@ body {
 }
 
 .fade-in { animation: fadeIn 0.3s ease-out forwards; }
+
+.scan-progress {
+  margin-bottom: 24px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  background: var(--bg-secondary);
+}
+.scan-progress-heading { display: flex; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
+.scan-progress p { color: var(--text-secondary); font-size: 0.85rem; margin-top: 10px; line-height: 1.5; }
+.scan-progress .scan-error { color: var(--danger); }
+.scan-progress-track { height: 10px; border-radius: 8px; background: var(--bg-input); overflow: hidden; }
+.scan-progress-fill { height: 100%; background-color: var(--accent); border-radius: inherit; transition: width 350ms ease; }
+.is-running .scan-progress-fill { background-image: linear-gradient(110deg, transparent 25%, #ffffff55 50%, transparent 75%); background-size: 100px 100%; animation: scan-shimmer 1.5s linear infinite; }
+@keyframes scan-shimmer { to { background-position: 100px 0; } }
+@media (prefers-reduced-motion: reduce) { .scan-progress-fill { transition: none; animation: none !important; } }

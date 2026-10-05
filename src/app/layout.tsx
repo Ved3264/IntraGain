@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "IntraGain — Market Screener",
+  title: "Valgo — Market Screener",
   description: "Algorithmic trend & volume analysis powered by Angel One SmartAPI",
 };
 
