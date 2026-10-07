@@ -7,7 +7,9 @@ type PickStatus = 'waiting' | 'live' | 'closed';
 
 interface PublicPick {
   symbol: string;
+  side: 'buy' | 'short';
   entryPrice: number;
+  entryConfirmed: boolean;
   horizonPrice: number | null;
   returnPct: number | null;
   status: PickStatus;
@@ -25,6 +27,10 @@ interface PublicReturnData {
   horizonDays: number;
   generatedAt: string;
   summary: { cohorts: number; picks: number; horizonReturnPct: number | null };
+  recommendations: {
+    publishedDay: string;
+    picks: Array<{ symbol: string; side: 'buy' | 'short'; liveReturnPct: number | null; status: PickStatus }>;
+  } | null;
   cohorts: PublicCohort[];
 }
 
@@ -114,11 +120,19 @@ export default function PublicReturns() {
   return <main className="public-shell">
     <header className="public-header">
       <Link className="public-logo" href="/"><span>V</span><div><b>Valgo</b><small>Daily return tracker</small></div></Link>
-      <Link className="admin-link" href="/admin">Admin</Link>
     </header>
 
-    <section className="public-hero">
-      <div><p className="eyebrow">PUBLISHED PERFORMANCE</p><h1>Returns across every recommendation.</h1><p>Choose which recommendation dates to inspect, then measure every stock after 1, 2, 15, or 30 trading sessions.</p></div>
+    <section className="next-recommendations" aria-labelledby="next-recommendations-title">
+      <div className="next-recommendations-heading"><div><p className="eyebrow">NEXT MARKET SESSION</p><h2 id="next-recommendations-title">Intraday recommendations</h2><p>Enter at the opening price in the shown direction and place the strategy exit at exactly +1.00% return.</p></div><span className="strategy-target">Target +1%</span></div>
+      {data?.recommendations ? <div className="recommendation-grid">
+        {data.recommendations.picks.map(pick => <article key={pick.symbol}><div><strong>{pick.symbol.replace('-EQ', '')}</strong><small>{pick.status === 'live' ? 'Live from opening price' : 'Entry at next session open'}</small></div><div className="recommendation-result"><span className={`position-badge ${pick.side}`}>{pick.side === 'buy' ? 'BUY' : 'SHORT'}</span><b className={tone(pick.liveReturnPct)}>{pick.status === 'live' ? signed(pick.liveReturnPct) : 'Waiting for open'}</b></div></article>)}
+      </div> : <div className="recommendation-waiting">No next-session recommendations have been published yet.</div>}
+    </section>
+
+    <section className="strategy-guidance" aria-labelledby="strategy-guidance-title">
+      <div><p className="eyebrow">HOW TO USE</p><h2 id="strategy-guidance-title">Daily 1% strategy</h2></div>
+      <ol><li><b>Enter at the market opening price</b> using the displayed Buy or Short direction.</li><li><b>Exit when the position reaches +1.00%.</b> The strategy’s planned trade is complete at that target.</li><li>If you continue or trail after +1%, you do so using your own judgment and at your own risk.</li></ol>
+      <div className="study-disclaimer"><b>Study-purpose disclosure</b><p>These stocks are data-driven suggestions and do not guarantee that a stock will rise or fall. Apply your own analysis and risk controls before acting. The publisher is not SEBI registered, and this information is provided only for education and study purposes, not as investment advice.</p></div>
     </section>
 
     <section className="public-filter-panel" aria-label="Return controls">
@@ -169,7 +183,7 @@ export default function PublicReturns() {
             {cohort && <><strong>{signed(cohort.horizonReturnPct)}</strong><i>{cohort.picks.length} pick{cohort.picks.length === 1 ? '' : 's'}</i>
               <div className="calendar-tooltip" role="tooltip">
                 <header><b>{new Date(`${day}T00:00:00Z`).toLocaleDateString('en-IN', { timeZone: 'UTC', weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' })}</b><span className={tone(cohort.horizonReturnPct)}>{signed(cohort.horizonReturnPct)}</span></header>
-                {cohort.picks.map(pick => <div className="tooltip-pick" key={pick.symbol}><b>{pick.symbol.replace('-EQ', '')}</b><span>{money(pick.entryPrice)} → {money(pick.horizonPrice)}</span><strong className={tone(pick.returnPct)}>{signed(pick.returnPct)}</strong></div>)}
+                {cohort.picks.map(pick => <div className="tooltip-pick" key={pick.symbol}><b>{pick.symbol.replace('-EQ', '')} <em className={`mini-side ${pick.side}`}>{pick.side === 'buy' ? 'BUY' : 'SHORT'}</em></b><span>{pick.entryConfirmed ? money(pick.entryPrice) : 'Next opening'} → {money(pick.horizonPrice)}</span><strong className={tone(pick.returnPct)}>{signed(pick.returnPct)}</strong></div>)}
               </div>
             </>}
           </div>;
@@ -181,8 +195,8 @@ export default function PublicReturns() {
       <section className="public-days">
         {data?.cohorts.map(cohort => <article className="public-day" key={cohort.pickDay}>
           <header><div><time>{new Date(`${cohort.pickDay}T00:00:00Z`).toLocaleDateString('en-IN', { timeZone: 'UTC', weekday: 'short', day: '2-digit', month: 'short', year: 'numeric' })}</time><small>{cohort.picks.length} published stock{cohort.picks.length === 1 ? '' : 's'}</small></div><div><span>{horizonDays}-day return <b className={tone(cohort.horizonReturnPct)}>{signed(cohort.horizonReturnPct)}</b></span></div></header>
-          <div className="public-return-table"><div className="public-return-row table-labels"><span>Symbol</span><span>Entry price</span><span>{horizonDays}-day price</span><span>Return</span><span>Status</span></div>
-            {cohort.picks.map(pick => <div className="public-return-row" key={pick.symbol}><strong>{pick.symbol.replace('-EQ', '')}</strong><span>{money(pick.entryPrice)}</span><span>{money(pick.horizonPrice)}</span><span className={tone(pick.returnPct)}>{signed(pick.returnPct)}</span><span><i className={`status-dot ${pick.status}`} />{statusLabel(pick.status)}</span></div>)}
+          <div className="public-return-table"><div className="public-return-row table-labels"><span>Symbol</span><span>Position</span><span>Entry price</span><span>{horizonDays}-day price</span><span>Return</span><span>Status</span></div>
+            {cohort.picks.map(pick => <div className="public-return-row" key={pick.symbol}><strong>{pick.symbol.replace('-EQ', '')}</strong><span><i className={`mini-side ${pick.side}`}>{pick.side === 'buy' ? 'BUY' : 'SHORT'}</i></span><span>{pick.entryConfirmed ? money(pick.entryPrice) : 'At next open'}</span><span>{money(pick.horizonPrice)}</span><span className={tone(pick.returnPct)}>{signed(pick.returnPct)}</span><span><i className={`status-dot ${pick.status}`} />{statusLabel(pick.status)}</span></div>)}
           </div>
         </article>)}
       </section>}

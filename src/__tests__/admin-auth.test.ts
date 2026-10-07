@@ -6,6 +6,7 @@ import path from 'node:path';
 import { createAdminAuthStore } from '../lib/admin-auth-store';
 import { hashAdminPassword, verifyAdminPassword } from '../lib/admin-password';
 import { sanitizePublicReturns } from '../lib/public-returns';
+import { directionalReturnPercent } from '../lib/portfolio';
 import type { PortfolioAnalysis } from '../lib/portfolio-types';
 
 test('admin password is salted and verified without storing plaintext', async () => {
@@ -14,6 +15,12 @@ test('admin password is salted and verified without storing plaintext', async ()
     assert.equal(await verifyAdminPassword('wrong', hash), false);
     assert.equal(hash.includes('Test-Admin@123'), false);
     assert.notEqual(hash, await hashAdminPassword('Test-Admin@123'));
+});
+
+test('buy and short recommendations calculate returns in their trade direction', () => {
+    assert.ok(Math.abs((directionalReturnPercent(101, 100, 'buy') ?? 0) - 1) < 1e-10);
+    assert.ok(Math.abs((directionalReturnPercent(99, 100, 'short') ?? 0) - 1) < 1e-10);
+    assert.ok(Math.abs((directionalReturnPercent(101, 100, 'short') ?? 0) + 1) < 1e-10);
 });
 
 test('sessions expire, revoke, reject tampering, and failed logins throttle', async t => {
@@ -44,7 +51,7 @@ test('public returns expose display prices but hide private portfolio and provid
         days: 15, startDay: '2026-09-24', horizonDays: 2, generatedAt: '2026-10-08T00:00:00Z', liveError: 'private provider detail',
         summary: { cohorts: 1, picks: 1, completedPicks: 1, nextSessionReturnPct: 2, holdingReturnPct: 4, horizonReturnPct: 3, investedAmount: 10000, currentValue: 10400 },
         cohorts: [{ id: 'private-id', pickDay: '2026-10-07', nextSessionReturnPct: 2, holdingReturnPct: 4, horizonReturnPct: 3,
-            picks: [{ symbol: 'ABC-EQ', entryPrice: 100, currentPrice: 104, nextSessionPrice: 102, nextSessionReturnPct: 2, holdingReturnPct: 4, status: 'closed', horizonDays: 2, horizonPrice: 103, horizonReturnPct: 3, horizonStatus: 'closed' }] }],
+            picks: [{ symbol: 'ABC-EQ', side: 'short', entryPrice: 100, entryConfirmed: true, currentPrice: 104, nextSessionPrice: 102, nextSessionReturnPct: -2, holdingReturnPct: -4, status: 'live', horizonDays: 2, horizonPrice: 103, horizonReturnPct: -3, horizonStatus: 'closed' }] }],
     };
     const publicData = sanitizePublicReturns(full);
     const serialized = JSON.stringify(publicData);
@@ -54,5 +61,7 @@ test('public returns expose display prices but hide private portfolio and provid
     assert.equal(publicData.cohorts[0].picks[0].symbol, 'ABC-EQ');
     assert.equal(publicData.cohorts[0].picks[0].entryPrice, 100);
     assert.equal(publicData.cohorts[0].picks[0].horizonPrice, 103);
-    assert.equal(publicData.cohorts[0].picks[0].returnPct, 3);
+    assert.equal(publicData.cohorts[0].picks[0].side, 'short');
+    assert.equal(publicData.cohorts[0].picks[0].returnPct, -3);
+    assert.equal(publicData.recommendations?.picks[0].liveReturnPct, -2);
 });

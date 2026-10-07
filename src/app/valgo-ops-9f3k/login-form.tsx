@@ -1,18 +1,22 @@
 'use client';
+
 import { useState, type FormEvent } from 'react';
+import { ADMIN_LOGIN_API } from '@/lib/admin-route';
 
 export default function AdminLoginForm() {
     const [pending, setPending] = useState(false);
     const [show, setShow] = useState(false);
     const [error, setError] = useState('');
+
     async function submit(event: FormEvent<HTMLFormElement>) {
         event.preventDefault();
         if (pending) return;
         const form = event.currentTarget;
         const password = new FormData(form).get('password');
-        setPending(true); setError('');
+        setPending(true);
+        setError('');
         try {
-            const response = await fetch('/api/admin/login', {
+            const response = await fetch(ADMIN_LOGIN_API, {
                 method: 'POST', headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ password }), signal: AbortSignal.timeout(30_000),
             });
@@ -25,6 +29,7 @@ export default function AdminLoginForm() {
             setPending(false);
         }
     }
+
     return <form className="login-form" onSubmit={submit}>
         <label htmlFor="admin-password">Password</label>
         <div className="login-password-field">

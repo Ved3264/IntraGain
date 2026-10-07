@@ -30,11 +30,15 @@ export async function POST(request: Request) {
     const denied = await requireAdmin(request);
     if (denied) return denied;
     try {
-        const body = await readSmallJson(request, 16 * 1024) as { symbols?: unknown } | null;
-        if (!Array.isArray(body?.symbols) || !body.symbols.every(symbol => typeof symbol === 'string')) {
-            return NextResponse.json({ success: false, error: 'Select valid stocks.' }, { status: 400, headers });
+        const body = await readSmallJson(request, 16 * 1024) as { picks?: unknown } | null;
+        if (!Array.isArray(body?.picks) || !body.picks.every(pick => {
+            if (!pick || typeof pick !== 'object') return false;
+            const candidate = pick as { symbol?: unknown; side?: unknown };
+            return typeof candidate.symbol === 'string' && (candidate.side === 'buy' || candidate.side === 'short');
+        })) {
+            return NextResponse.json({ success: false, error: 'Assign Buy or Short to every selected stock.' }, { status: 400, headers });
         }
-        return NextResponse.json({ success: true, data: await saveTodayPicks(body.symbols) }, { headers });
+        return NextResponse.json({ success: true, data: await saveTodayPicks(body.picks as Array<{ symbol: string; side: 'buy' | 'short' }>) }, { headers });
     } catch (error) {
         const message = error instanceof Error ? error.message : 'Unable to save portfolio.';
         return NextResponse.json({ success: false, error: message }, { status: message.includes('does not have') || message.includes('Select') ? 400 : 500, headers });

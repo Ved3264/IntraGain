@@ -1,9 +1,11 @@
 import { redirect } from 'next/navigation';
+import Link from 'next/link';
 import { isAdmin } from '@/lib/admin-auth';
 import AdminLoginForm from './login-form';
-import Link from 'next/link';
 
-export default async function AdminLoginPage() {
+export const metadata = { robots: { index: false, follow: false } };
+
+export default async function HiddenAdminLoginPage() {
     if (await isAdmin()) redirect('/admin');
     return <main className="login-shell"><section className="login-card">
         <div className="login-brand"><span>V</span><div><b>Valgo Admin</b><small>Private management console</small></div></div>

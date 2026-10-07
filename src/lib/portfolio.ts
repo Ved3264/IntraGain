@@ -10,7 +10,11 @@ import type { PortfolioAnalysis, PortfolioCohortView, PortfolioPickView } from '
 interface StoredPick {
     symbol: string;
     token: string;
+    side?: 'buy' | 'short';
     entryPrice: number;
+    referencePrice?: number;
+    entryAtOpen?: boolean;
+    entryDay?: string;
     selectedAt: string;
     nextSessionPrice?: number;
     nextSessionDay?: string;
@@ -20,7 +24,11 @@ interface StoredBatch { picks: StoredPick[]; }
 interface BatchRow { id: string; pick_day: string; encrypted_payload: string; }
 
 const average = (values: number[]) => values.length ? values.reduce((sum, value) => sum + value, 0) / values.length : null;
-const percent = (end: number, start: number) => start > 0 ? (end / start - 1) * 100 : null;
+export const directionalReturnPercent = (end: number, start: number, side: 'buy' | 'short') => {
+    if (start <= 0) return null;
+    const longReturn = (end / start - 1) * 100;
+    return side === 'short' ? -longReturn : longReturn;
+};
 
 const HORIZONS = [1, 2, 15, 30] as const;
 const resolutionAttempts = new Set<string>();
@@ -62,6 +70,12 @@ async function resolveHorizons(row: BatchRow, batch: StoredBatch) {
             continue;
         }
         const laterCandles = candles.filter((candle: Array<string | number>) => String(candle[0]).slice(0, 10) > row.pick_day);
+        if (pick.entryAtOpen && !pick.entryDay && laterCandles[0]) {
+            pick.referencePrice ??= pick.entryPrice;
+            pick.entryPrice = Number(laterCandles[0][1]);
+            pick.entryDay = String(laterCandles[0][0]).slice(0, 10);
+            changed = true;
+        }
         for (const horizon of HORIZONS) {
             if (pick.horizonPrices[String(horizon)]) continue;
             const candle = laterCandles[horizon - 1];
@@ -81,19 +95,19 @@ async function resolveHorizons(row: BatchRow, batch: StoredBatch) {
     return batch;
 }
 
-export async function saveTodayPicks(symbols: string[]) {
-    const unique = [...new Set(symbols)];
+export async function saveTodayPicks(selections: Array<{ symbol: string; side: 'buy' | 'short' }>) {
+    const unique = [...new Map(selections.map(selection => [selection.symbol, selection])).values()];
     if (unique.length === 0 || unique.length > STOCKS.length) throw new Error('Select at least one valid scanner stock.');
     const stockBySymbol = new Map(STOCKS.map(stock => [stock.symbol, stock]));
     const scanBySymbol = new Map((scanService.read()?.data || []).map(result => [result.symbol, result]));
     const selectedAt = new Date().toISOString();
-    const picks: StoredPick[] = unique.map(symbol => {
+    const picks: StoredPick[] = unique.map(({ symbol, side }) => {
         const stock = stockBySymbol.get(symbol);
         const result = scanBySymbol.get(symbol);
         if (!stock || !result || !Number.isFinite(result.price) || indiaDay(new Date(result.timestamp)) !== indiaDay()) {
             throw new Error(`${symbol.replace('-EQ', '')} does not have a completed scan result from today.`);
         }
-        return { symbol, token: stock.token, entryPrice: result.price, selectedAt };
+        return { symbol, token: stock.token, side, entryPrice: result.price, referencePrice: result.price, entryAtOpen: true, selectedAt };
     });
     await ensurePortfolioSchema();
     const id = randomUUID();
@@ -127,6 +141,7 @@ export async function portfolioAnalysis(days: number, horizonDays = 1, startDay?
     const today = indiaDay();
     const cohorts: PortfolioCohortView[] = decoded.map(({ row, batch }) => {
         const picks: PortfolioPickView[] = batch.picks.map(pick => {
+            const side = pick.side === 'short' ? 'short' : 'buy';
             const currentPrice = quoteMap.get(pick.token) ?? null;
             const isLiveNextSession = row.pick_day < today && pick.nextSessionPrice === undefined && currentPrice !== null;
             const nextSessionPrice = pick.nextSessionPrice ?? (isLiveNextSession ? currentPrice : null);
@@ -135,15 +150,17 @@ export async function portfolioAnalysis(days: number, horizonDays = 1, startDay?
             const horizonPrice = savedHorizon?.price ?? (isLiveHorizon ? currentPrice : null);
             return {
                 symbol: pick.symbol,
+                side,
                 entryPrice: pick.entryPrice,
+                entryConfirmed: !pick.entryAtOpen || Boolean(pick.entryDay),
                 currentPrice,
                 nextSessionPrice,
-                nextSessionReturnPct: nextSessionPrice === null ? null : percent(nextSessionPrice, pick.entryPrice),
-                holdingReturnPct: currentPrice === null ? null : percent(currentPrice, pick.entryPrice),
+                nextSessionReturnPct: nextSessionPrice === null ? null : directionalReturnPercent(nextSessionPrice, pick.entryPrice, side),
+                holdingReturnPct: currentPrice === null ? null : directionalReturnPercent(currentPrice, pick.entryPrice, side),
                 status: pick.nextSessionPrice !== undefined ? 'closed' : isLiveNextSession ? 'live' : 'waiting',
                 horizonDays: horizon,
                 horizonPrice,
-                horizonReturnPct: horizonPrice === null ? null : percent(horizonPrice, pick.entryPrice),
+                horizonReturnPct: horizonPrice === null ? null : directionalReturnPercent(horizonPrice, pick.entryPrice, side),
                 horizonStatus: savedHorizon ? 'closed' : isLiveHorizon ? 'live' : 'waiting',
             };
         });

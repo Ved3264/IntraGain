@@ -5,9 +5,9 @@ import { decryptPortfolio, encryptPortfolio } from '../src/lib/portfolio-crypto'
 const PICK_DAY = '2026-10-05';
 const payload = {
     picks: [
-        { symbol: 'NINSYS-EQ', token: '14194', entryPrice: 842.00, selectedAt: '2026-10-05T21:17:04+05:30' },
-        { symbol: 'MAWANASUG-EQ', token: '17022', entryPrice: 145.96, selectedAt: '2026-10-05T21:17:17+05:30' },
-        { symbol: 'GRINDWELL-EQ', token: '13560', entryPrice: 2010.00, selectedAt: '2026-10-05T21:19:40+05:30' },
+        { symbol: 'NINSYS-EQ', token: '14194', side: 'buy' as const, entryPrice: 842.00, selectedAt: '2026-10-05T21:17:04+05:30' },
+        { symbol: 'MAWANASUG-EQ', token: '17022', side: 'buy' as const, entryPrice: 145.96, selectedAt: '2026-10-05T21:17:17+05:30' },
+        { symbol: 'GRINDWELL-EQ', token: '13560', side: 'buy' as const, entryPrice: 2010.00, selectedAt: '2026-10-05T21:19:40+05:30' },
     ],
 };
 

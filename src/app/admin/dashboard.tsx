@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 import type { ScanJob } from '@/lib/scan-job';
+import { ADMIN_LOGIN_PATH } from '@/lib/admin-route';
 import PortfolioView from '../portfolio-view';
 
 interface Result {
@@ -35,6 +36,8 @@ export default function Home() {
   const [theme, setTheme] = useState<'light' | 'dark'>('dark');
   const [view, setView] = useState<'scanner' | 'portfolio'>('scanner');
   const [selectedSymbols, setSelectedSymbols] = useState<Set<string>>(new Set());
+  const [positionPanelOpen, setPositionPanelOpen] = useState(false);
+  const [positionSides, setPositionSides] = useState<Record<string, 'buy' | 'short'>>({});
   const [savingPicks, setSavingPicks] = useState(false);
   const [portfolioMessage, setPortfolioMessage] = useState('');
 
@@ -58,7 +61,7 @@ export default function Home() {
     void (async () => {
       try {
         const res = await fetch('/api/results', { cache: 'no-store', signal: initialController.signal });
-        if (res.status === 401) { window.location.replace('/admin/login'); return; }
+        if (res.status === 401) { window.location.replace(ADMIN_LOGIN_PATH); return; }
         const json = await res.json();
         if (!res.ok || !json.success) throw new Error(json.error || 'Unable to load results.');
         if (initialController.signal.aborted) return;
@@ -82,18 +85,25 @@ export default function Home() {
 
   const savePicks = async () => {
     if (!selectedSymbols.size || savingPicks) return;
+    const picks = [...selectedSymbols].map(symbol => ({ symbol, side: positionSides[symbol] }));
+    if (picks.some(pick => !pick.side)) {
+      setPortfolioMessage('Assign Buy or Short to every selected stock.');
+      return;
+    }
     setSavingPicks(true);
     setPortfolioMessage('');
     try {
       const response = await fetch('/api/portfolio', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ symbols: [...selectedSymbols] }),
+        body: JSON.stringify({ picks }),
       });
-      if (response.status === 401) { window.location.replace('/admin/login'); return; }
+      if (response.status === 401) { window.location.replace(ADMIN_LOGIN_PATH); return; }
       const result = await response.json();
       if (!response.ok || !result.success) throw new Error(result.error || 'Unable to save today’s picks.');
       setPortfolioMessage(`${result.data.count} stocks saved for ${result.data.pickDay}.`);
       setSelectedSymbols(new Set());
+      setPositionSides({});
+      setPositionPanelOpen(false);
     } catch (error) {
       setPortfolioMessage(error instanceof Error ? error.message : 'Unable to save today’s picks.');
     } finally { setSavingPicks(false); }
@@ -125,7 +135,7 @@ export default function Home() {
             body: JSON.stringify(body), cache: 'no-store',
             signal: AbortSignal.any([signal, AbortSignal.timeout(30000)]),
           });
-          if (res.status === 401) { window.location.replace('/admin/login'); controller.current?.abort(); throw new Error('Admin session expired.'); }
+          if (res.status === 401) { window.location.replace(ADMIN_LOGIN_PATH); controller.current?.abort(); throw new Error('Admin session expired.'); }
           const json = await res.json();
           if (!res.ok || !json.success) throw new Error(json.error || 'The server could not continue this scan.');
           return json.job;
@@ -355,9 +365,19 @@ export default function Home() {
               }
               return next;
             })} /> Select this page</label>
-          <div><span>{selectedSymbols.size} selected</span><button className="btn" disabled={!selectedSymbols.size || savingPicks} onClick={() => void savePicks()}>{savingPicks ? 'Saving…' : 'Save today’s picks'}</button></div>
+          <div><span>{selectedSymbols.size} selected</span><button className="btn" disabled={!selectedSymbols.size || savingPicks} onClick={() => { setPositionSides({}); setPortfolioMessage(''); setPositionPanelOpen(true); }}>Assign positions</button></div>
         </div>
         {portfolioMessage && <div className={`inline-message ${portfolioMessage.includes('saved') ? 'success' : 'error'}`} role="status">{portfolioMessage}</div>}
+        {positionPanelOpen && <section className="position-assignment" aria-labelledby="position-assignment-title">
+          <div className="position-assignment-heading"><div><h3 id="position-assignment-title">Assign trade direction</h3><p>Choose Buy or Short for every selected stock before publishing the next-session recommendations.</p></div><button type="button" onClick={() => setPositionPanelOpen(false)} aria-label="Close position assignment">×</button></div>
+          <div className="position-assignment-list">
+            {[...selectedSymbols].map(symbol => {
+              const result = data.find(item => item.symbol === symbol);
+              return <div className="position-assignment-row" key={symbol}><div><b>{symbol.replace('-EQ', '')}</b><small>{result ? `Reference ${new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' }).format(result.price)}` : 'Selected stock'}</small></div><div className="side-buttons" role="group" aria-label={`Position for ${symbol.replace('-EQ', '')}`}><button type="button" className={positionSides[symbol] === 'buy' ? 'buy active' : 'buy'} onClick={() => setPositionSides(current => ({ ...current, [symbol]: 'buy' }))}>Buy</button><button type="button" className={positionSides[symbol] === 'short' ? 'short active' : 'short'} onClick={() => setPositionSides(current => ({ ...current, [symbol]: 'short' }))}>Short</button></div></div>;
+            })}
+          </div>
+          <div className="position-assignment-actions"><span>{Object.keys(positionSides).filter(symbol => selectedSymbols.has(symbol)).length} of {selectedSymbols.size} assigned</span><button className="btn" disabled={savingPicks || [...selectedSymbols].some(symbol => !positionSides[symbol])} onClick={() => void savePicks()}>{savingPicks ? 'Publishing…' : 'Publish recommendations'}</button></div>
+        </section>}
 
         {/* Content */}
         {fetching ? (

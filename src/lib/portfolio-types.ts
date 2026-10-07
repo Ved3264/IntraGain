@@ -1,6 +1,8 @@
 export interface PortfolioPickView {
     symbol: string;
+    side: 'buy' | 'short';
     entryPrice: number;
+    entryConfirmed: boolean;
     currentPrice: number | null;
     nextSessionPrice: number | null;
     nextSessionReturnPct: number | null;

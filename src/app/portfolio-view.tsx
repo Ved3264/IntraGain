@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState, type CSSProperties } from 'react';
 import type { LiveQuoteView, PortfolioAnalysis, PortfolioCohortView } from '@/lib/portfolio-types';
+import { ADMIN_LOGIN_PATH } from '@/lib/admin-route';
 
 const HORIZONS = [1, 2, 15, 30] as const;
 const money = (value: number | null) => value === null ? 'Pending' : new Intl.NumberFormat('en-IN', {
@@ -57,7 +58,7 @@ export default function PortfolioView() {
     try {
       const url = mode === 'portfolio' ? `/api/portfolio?${rangeQuery}&horizon=${horizonDays}` : '/api/market';
       const response = await fetch(url, { cache: 'no-store', signal: AbortSignal.timeout(45_000) });
-      if (response.status === 401) { window.location.replace('/admin/login'); return; }
+      if (response.status === 401) { window.location.replace(ADMIN_LOGIN_PATH); return; }
       const result = await response.json();
       if (!response.ok || !result.success) throw new Error(result.error || 'Unable to refresh live data.');
       if (mode === 'portfolio') setAnalysis(result.data);
@@ -158,7 +159,7 @@ export default function PortfolioView() {
               {cohort && <><strong>{signed(cohort.horizonReturnPct)}</strong><i>{cohort.picks.length} pick{cohort.picks.length === 1 ? '' : 's'}</i>
                 <div className="calendar-tooltip" role="tooltip">
                   <header><b>{new Date(`${day}T00:00:00Z`).toLocaleDateString('en-IN', { timeZone: 'UTC', weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' })}</b><span className={tone(cohort.horizonReturnPct)}>{signed(cohort.horizonReturnPct)}</span></header>
-                  {cohort.picks.map(pick => <div className="tooltip-pick" key={pick.symbol}><b>{pick.symbol.replace('-EQ', '')}</b><span>{money(pick.entryPrice)} → {money(pick.horizonPrice)}</span><strong className={tone(pick.horizonReturnPct)}>{signed(pick.horizonReturnPct)}</strong></div>)}
+                  {cohort.picks.map(pick => <div className="tooltip-pick" key={pick.symbol}><b>{pick.symbol.replace('-EQ', '')} <em className={`mini-side ${pick.side}`}>{pick.side === 'buy' ? 'BUY' : 'SHORT'}</em></b><span>{pick.entryConfirmed ? money(pick.entryPrice) : 'Next opening'} → {money(pick.horizonPrice)}</span><strong className={tone(pick.horizonReturnPct)}>{signed(pick.horizonReturnPct)}</strong></div>)}
                 </div>
               </>}
             </div>;
@@ -171,8 +172,8 @@ export default function PortfolioView() {
       </div> : <div className="public-days admin-return-days">
         {analysis?.cohorts.map(cohort => <article className="public-day" key={cohort.id}>
           <header><div><time>{new Date(`${cohort.pickDay}T00:00:00Z`).toLocaleDateString('en-IN', { timeZone: 'UTC', weekday: 'short', day: '2-digit', month: 'short', year: 'numeric' })}</time><small>{cohort.picks.length} saved stock{cohort.picks.length === 1 ? '' : 's'}</small></div><div><span>{horizonDays}-day return <b className={tone(cohort.horizonReturnPct)}>{signed(cohort.horizonReturnPct)}</b></span></div></header>
-          <div className="public-return-table"><div className="public-return-row table-labels"><span>Symbol</span><span>Entry price</span><span>{horizonDays}-day price</span><span>Return</span><span>Status</span></div>
-            {cohort.picks.map(pick => <div className="public-return-row" key={pick.symbol}><strong>{pick.symbol.replace('-EQ', '')}</strong><span>{money(pick.entryPrice)}</span><span>{money(pick.horizonPrice)}</span><span className={tone(pick.horizonReturnPct)}>{signed(pick.horizonReturnPct)}</span><span><i className={`status-dot ${pick.horizonStatus}`} />{statusLabel(pick.horizonStatus)}</span></div>)}
+          <div className="public-return-table"><div className="public-return-row table-labels"><span>Symbol</span><span>Position</span><span>Entry price</span><span>{horizonDays}-day price</span><span>Return</span><span>Status</span></div>
+            {cohort.picks.map(pick => <div className="public-return-row" key={pick.symbol}><strong>{pick.symbol.replace('-EQ', '')}</strong><span><i className={`mini-side ${pick.side}`}>{pick.side === 'buy' ? 'BUY' : 'SHORT'}</i></span><span>{pick.entryConfirmed ? money(pick.entryPrice) : 'At next open'}</span><span>{money(pick.horizonPrice)}</span><span className={tone(pick.horizonReturnPct)}>{signed(pick.horizonReturnPct)}</span><span><i className={`status-dot ${pick.horizonStatus}`} />{statusLabel(pick.horizonStatus)}</span></div>)}
           </div>
         </article>)}
       </div>}

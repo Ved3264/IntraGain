@@ -130,12 +130,28 @@ removes portfolio amounts, internal IDs, provider errors, tokens, and scanner
 signals. Responses are coalesced and cached for 30 seconds to limit public
 market-data traffic.
 
+The public page also shows the active next-session recommendations with a Buy or
+Short direction. The documented strategy enters at the next market session's
+opening price and exits at a +1% directional return. New recommendations store
+the confirmed opening price when that session begins; Buy returns rise with the
+stock and Short returns rise when the stock falls. The page includes the
+study-purpose, no-guarantee, independent-analysis, and non-SEBI-registered
+disclosures.
+
 `/admin` contains the scanner, selection controls, detailed portfolio view, and
 all-scanner live market view. `/api/results`, `/api/scan`, `/api/market`, and
 `/api/portfolio` require a valid administrator session. The password is stored
 only as an OWASP-strength scrypt hash. Admin cookies are HttpOnly, SameSite=Strict,
 and Secure in production. Sessions have a 30-minute idle timeout and eight-hour
 absolute timeout; login is limited to five failed attempts per 15 minutes.
+After selecting scanner rows, the administrator must assign Buy or Short to
+every stock before the recommendation batch can be published.
+
+The private login entry is `/valgo-ops-9f3k`; it is intentionally absent from
+the public page. Unauthenticated `/admin`, the former `/admin/login`, and the
+former `/api/admin/login` return 404. The hidden path only reduces automated
+probing; password hashing, request-origin checks, throttling, and session
+validation remain the security controls.
 
 To change the local admin password without placing plaintext in source code:
 

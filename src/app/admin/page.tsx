@@ -1,8 +1,8 @@
-import { redirect } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import { isAdmin } from '@/lib/admin-auth';
 import AdminDashboard from './dashboard';
 
 export default async function AdminPage() {
-    if (!await isAdmin()) redirect('/admin/login');
+    if (!await isAdmin()) notFound();
     return <AdminDashboard />;
 }
