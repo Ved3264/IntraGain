@@ -2,11 +2,14 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 import { scanService } from '@/lib/scan-job';
+import { requireAdmin } from '@/lib/admin-auth';
 
 export const runtime = 'nodejs';
 const headers = { 'Cache-Control': 'no-store' };
 
 export async function GET() {
+    const denied = await requireAdmin();
+    if (denied) return denied;
     try {
         const job = scanService.read();
         if (job) return NextResponse.json({ success: true, data: job.data, job }, { headers });

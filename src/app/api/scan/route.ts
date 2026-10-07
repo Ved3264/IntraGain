@@ -1,11 +1,14 @@
 import { NextResponse } from 'next/server';
 import { scanService } from '@/lib/scan-job';
 import { readSmallJson } from '@/lib/request';
+import { requireAdmin } from '@/lib/admin-auth';
 
 export const runtime = 'nodejs';
 const headers = { 'Cache-Control': 'no-store' };
 
 export async function POST(request: Request) {
+    const denied = await requireAdmin(request);
+    if (denied) return denied;
     try {
         const body = await readSmallJson(request) as { action?: string; id?: string; cursor?: number } | null;
         if (body?.action === 'start') {

@@ -1,5 +1,5 @@
 const nextConfig: import('next').NextConfig = {
-    serverExternalPackages: ['smartapi-javascript']
+    serverExternalPackages: ['smartapi-javascript', 'pg']
 };
 
 export default nextConfig;

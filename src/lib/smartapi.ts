@@ -70,3 +70,40 @@ export async function getHistoricalData(smart_api: SmartAPI, symbolToken: string
         throw new Error('Angel One market data is unavailable. Resume to retry the current stock.');
     }
 }
+
+export interface MarketQuote {
+    symbol: string;
+    token: string;
+    ltp: number;
+    previousClose: number;
+    changePercent: number;
+    exchangeTime: string | null;
+}
+
+export async function getMarketQuotes(stocks: Array<{ symbol: string; token: string }>): Promise<MarketQuote[]> {
+    if (stocks.length === 0) return [];
+    const { smart_api } = await getSmartAPI();
+    const quotes: MarketQuote[] = [];
+    for (let offset = 0; offset < stocks.length; offset += 50) {
+        const batch = stocks.slice(offset, offset + 50);
+        const response = await smart_api.marketData({ mode: 'FULL', exchangeTokens: { NSE: batch.map(stock => stock.token) } });
+        if (response?.status !== true || !Array.isArray(response?.data?.fetched)) {
+            clearSmartAPISession();
+            throw new Error('Live market prices are temporarily unavailable.');
+        }
+        const symbolByToken = new Map(batch.map(stock => [stock.token, stock.symbol]));
+        for (const item of response.data.fetched) {
+            const token = String(item.symbolToken);
+            const ltp = Number(item.ltp);
+            const previousClose = Number(item.close);
+            if (!symbolByToken.has(token) || !Number.isFinite(ltp) || !Number.isFinite(previousClose)) continue;
+            quotes.push({
+                symbol: symbolByToken.get(token)!, token, ltp, previousClose,
+                changePercent: previousClose ? (ltp / previousClose - 1) * 100 : Number(item.percentChange) || 0,
+                exchangeTime: typeof item.exchFeedTime === 'string' ? item.exchFeedTime : null,
+            });
+        }
+        if (offset + 50 < stocks.length) await new Promise(resolve => setTimeout(resolve, 350));
+    }
+    return quotes;
+}

@@ -59,3 +59,101 @@ multi-minute request, but do not make the free filesystem persistent.
 
 Validation: `npx tsx --test src/__tests__/scan-job.test.ts`,
 `npx tsx src/__tests__/kalman.test.ts`, `npx tsc --noEmit`, and `npm run build`.
+
+## Portfolio management
+
+After a current-day scan, select one or more table rows and choose **Save today's
+picks**. Saving again on the same India-market date replaces that day's batch.
+The Portfolio tab provides:
+
+- **Today / 15 / 30 / 40 days**: daily cohorts with per-stock entry, current
+  price, next-session return, and return if held through today.
+- **Next-session return**: live LTP before that next trading session closes;
+  after 15:35 IST, its daily close is saved as the final result. Weekends and
+  exchange holidays naturally wait for the next available daily candle.
+- **Held-through-today return**: assumes ₹10,000 was invested equally among each
+  day's picks, then aggregates equal daily allocations through the current LTP.
+- **All scanner stocks**: live change versus previous close for the entire
+  configured scanner universe, refreshed every 60 seconds in the browser.
+
+Server-only environment variables:
+
+```text
+DATABASE_URL=postgresql://USER:PASSWORD@HOST/DATABASE
+PORTFOLIO_ENCRYPTION_KEY=<base64 encoded random 32-byte key>
+PORTFOLIO_WEBHOOK_SECRET=<optional random secret, at least 32 characters>
+ADMIN_PASSWORD_HASH=<generated scrypt hash; never the plaintext password>
+APP_ORIGIN=https://your-service.onrender.com
+```
+
+Generate keys locally:
+
+```powershell
+node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
+node -e "console.log(require('crypto').randomBytes(32).toString('base64url'))"
+```
+
+`portfolio_batches.encrypted_payload` uses AES-256-GCM with a fresh nonce for
+every write. Symbols, entry prices, saved closes, and return inputs are encrypted
+before they reach PostgreSQL. The database can still see random row IDs, pick
+dates, timestamps, row counts, and ciphertext sizes because dates are needed for
+range queries. Losing or changing `PORTFOLIO_ENCRYPTION_KEY` makes existing
+portfolio history unreadable, so back it up separately.
+
+This is application-level encryption, not provider-blind end-to-end encryption.
+When the app and encryption key both run on Render, Render infrastructure could
+theoretically access process memory or environment variables. To make the host
+unable to decrypt data, key handling and return calculations would need to move
+to a trusted client or separate host.
+
+For an after-close scheduler, call `POST /api/portfolio/webhook` with
+`Authorization: Bearer <PORTFOLIO_WEBHOOK_SECRET>`. The operation is idempotent;
+it fills unresolved next-session closes and leaves completed picks unchanged.
+
+Render setup requires all five variables above. Never use a `NEXT_PUBLIC_`
+prefix. Rotate the supplied database password before production deployment,
+because it was shared outside Render.
+
+## Public returns and admin access
+
+`/` is the public returns page. It has two independent controls. The
+recommendation-date control shows the current month by default or a custom last-N
+calendar-day window. The return-horizon control measures every pick after 1, 2,
+15, or 30 trading sessions. A daily heatmap uses green for gains, red for losses,
+yellow for live or pending results, and shows the entry and horizon prices on
+hover or keyboard focus.
+
+The public JSON endpoint is `/api/returns?range=month&horizon=1`. For a custom
+window use, for example, `/api/returns?range=days&days=16&horizon=2`. It exposes
+only the date, symbol, display prices, selected-horizon return, and status. It
+removes portfolio amounts, internal IDs, provider errors, tokens, and scanner
+signals. Responses are coalesced and cached for 30 seconds to limit public
+market-data traffic.
+
+`/admin` contains the scanner, selection controls, detailed portfolio view, and
+all-scanner live market view. `/api/results`, `/api/scan`, `/api/market`, and
+`/api/portfolio` require a valid administrator session. The password is stored
+only as an OWASP-strength scrypt hash. Admin cookies are HttpOnly, SameSite=Strict,
+and Secure in production. Sessions have a 30-minute idle timeout and eight-hour
+absolute timeout; login is limited to five failed attempts per 15 minutes.
+
+To change the local admin password without placing plaintext in source code:
+
+```powershell
+$adminPassword = Read-Host 'Admin password' -AsSecureString
+$adminCredential = [System.Net.NetworkCredential]::new('', $adminPassword)
+$adminCredential.Password | npx.cmd tsx scripts/set-admin-password.ts
+Remove-Variable adminCredential, adminPassword
+```
+
+Restart the development server afterward. Copy the generated
+`ADMIN_PASSWORD_HASH` from the ignored `.env.development.local` file to Render.
+Set `APP_ORIGIN` to the exact public HTTPS origin; mutation requests from other
+origins are rejected. Render's ephemeral filesystem can sign out all admins and
+reset login-attempt history after a restart, while portfolio records remain in
+PostgreSQL.
+
+Database verification: `node --env-file=.env.local
+--env-file=.env.development.local ./node_modules/tsx/dist/cli.mjs
+scripts/check-portfolio-db.ts`. The check creates its test row inside a rolled-back
+transaction and verifies that plaintext never reaches PostgreSQL.
